@@ -1,10 +1,7 @@
-// Listens for keypress and modifies the Expression accordingly
-
 const characters = new Set();
 for (let char of 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@^*()[];:\'"/?.,<>-=+`~') {
     characters.add(char);
 }
-
 /**
  * @class
  *
@@ -127,8 +124,172 @@ class Cursor {
         }
     }
 
-    keyPress(event) {
-        if (characters.has(event.key)) {
+    keyPress(event, lastKey) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        if(event.ctrlKey){
+            let _;
+            let symbolKey = 'y';
+            let greekKey = 'w';
+            let trigoKey = 't';
+            switch(event.key){
+                case 'R':
+                    _ = new NthRoot(this.block);
+                    break;
+                case 'f':
+                    _ = new TemplateTwoBlockContinuousComponent(this.block,'dfrac');
+                    break;
+                case 'h':
+                    _ = new Superscript(this.block);
+                    break;
+                case 'r':
+                    if (lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\rho');
+                    }else {
+                        _ = new Sqrt(this.block);
+                    }
+                    break;
+                case '0':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\phi');
+                    }
+                    break;
+                case '3':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\epsilon');
+                    }
+                    break;
+                case '9':
+                    _ = new BracketR(this.block);
+                    break;
+                case '[':
+                    _ = new BracketS(this.block);
+                    break;
+                case '{':
+                    _ = new BracketC(this.block);
+                    break;
+                case 'i':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\infty');
+                    } else {
+                        _ = new TemplateThreeBlockComponent(this.block, 'displaystyle\\int\\limits');
+                    }
+                    break;
+                case 'I':
+                    _ = new TemplateOneBlockComponent(this.block, 'displaystyle\\int');
+                    break;
+                case 's':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\sigma');
+                    } else if(lastKey === trigoKey) {
+                        _ = new MJXGUISymbol(this.block, '\\sin');
+                    } else {
+                        _ = new TemplateThreeBlockComponent(this.block, 'displaystyle\\sum');
+                    }
+                    break;
+                case 'c':
+                    if(lastKey === trigoKey) {
+                        _ = new MJXGUISymbol(this.block, '\\cos');
+                    }
+                    break;
+                case 'S':
+                    _ = new TemplateOneBlockComponent(this.block, 'displaystyle\\sum');
+                    break;
+                case 'v':
+                    _ = new TemplateOneBlockComponent(this.block, 'overrightarrow');
+                    break;
+                case 'a':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\alpha');
+                    } else {
+                        _ = new MJXGUISymbol(this.block, '\\longrightarrow');
+                    }
+                    break;
+                case 'q':
+                    _ = new MJXGUISymbol(this.block, '\\leftrightharpoons');
+                    break;
+                case 'l':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\leq');
+                    } else if (lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\lambda');
+                    } else {
+                        _ = new Subscript(this.block);
+                    }
+                    break;
+                case 'g':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\geq');
+                    }
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\gamma');
+                    }
+                    break;
+                case 't':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\therefore');
+                    } else if (lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\theta');
+                    } else if (lastKey === trigoKey) {
+                        _ = new MJXGUISymbol(this.block, '\\tan');
+                    }
+                    break;
+                case 'b':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\because');
+                    } else if (lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\beta');
+                    }
+                    break;
+                case 'e':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\equiv');
+                    } else if (lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\eta');
+                    } else {
+                        _ = new MJXGUISymbol(this.block, '\\Rightarrow');
+                    }
+                    break;
+                case 'm':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\times');
+                    } else if (lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\mu');
+                    }
+                    break;
+                case 'p':
+                    if(lastKey === symbolKey) {
+                        _ = new MJXGUISymbol(this.block, '\\propto');
+                    } else if (lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\pi');
+                    }
+                    break;
+                case 'D':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\Delta');
+                    }
+                    break;
+                case 'd':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\delta');
+                    }
+                    break;
+                case 'o':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\omega');
+                    }
+                    break;
+                case 'O':
+                    if(lastKey === greekKey) {
+                        _ = new MJXGUISymbol(this.block, '\\Omega');
+                    }
+                    break;
+
+            }
+            if(_) this.addComponent(_);
+
+        }
+        else if (characters.has(event.key)) {
             this.addText(event.key);
         } else if (event.key === 'ArrowLeft') {
             this.seekLeft();
@@ -358,9 +519,11 @@ class Cursor {
             // We add the current component inside the frame, add the caret in the
             // right position, generate latex and reset the components
             let i = this.component.blocks.indexOf(this.block);
+
             this.component.removeBlock(i);
             this.component.addBlock(frame, i);
             frame.blocks[0] = this.block;
+
             this.block.addChild(caret, Math.ceil(this.child));
         }
 

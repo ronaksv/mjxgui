@@ -30,7 +30,8 @@
 
     padding: 20px;
     min-width: 280px;
-    width: min(600px, 80%);
+    width: min(800px, 80%);
+    min-height: 400px;
 }
 
 ._mjxgui_editor_window svg {
@@ -92,6 +93,7 @@
     border: 1px solid var(--default-font-color);
     border-radius: 6px;
     overflow-x: auto;
+    font-size: 1.8rem;
 }
 
 .mjxgui_tab {
@@ -107,7 +109,7 @@
     transition: background-color ease 0.15s;
     cursor: pointer;
     margin: 2px;
-    min-width: 25px;
+    min-width: 30px;
     text-align: center;
     user-select: none;
     display: flex;
@@ -115,7 +117,8 @@
     justify-content: center;
     padding: 3px;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+
 }
 
 .mjxgui-btn:hover {
@@ -158,4 +161,12 @@
 
 ._mjxgui_equation_input_preview {
     margin-left: 10px;
+}
+.bottom_bar {
+    display: flex;
+    justify-content: center;
+}
+.bottom_bar button {
+    font-family: monospace;
+    border: 1px solid;
 }

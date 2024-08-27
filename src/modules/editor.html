@@ -9,163 +9,1120 @@
     <div class="mjxgui_clear_save_buttons">
         <span class="mjxgui_button_container _mjxgui_clear_equation">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <line x1="4" y1="7" x2="20" y2="7" />
-              <line x1="10" y1="11" x2="10" y2="17" />
-              <line x1="14" y1="11" x2="14" y2="17" />
-              <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
-              <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="10" y1="11" x2="10" y2="17" />
+            <line x1="14" y1="11" x2="14" y2="17" />
+            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
             </svg>
         </span>
         <span class="mjxgui_button_container _mjxgui_save_equation">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M5 12l5 5l10 -10" />
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l5 5l10 -10" />
             </svg>
         </span>
     </div>
 </div>
 <div class="_mjxgui_tab_container_container">
-    <div class="mjxgui_tab_container" data-tab="1">&alpha; Letters</div>
-    <div class="mjxgui_tab_container" data-tab="2">&plusmn; Symbols</div>
-    <div class="mjxgui_tab_container" data-tab="3">&Sigma; Functions</div>
+    <div class="mjxgui_tab_container" data-tab="1">Bracket</div>
+    <div class="mjxgui_tab_container" data-tab="2">Operator</div>
+    <div class="mjxgui_tab_container" data-tab="3">Arrow</div>
+    <div class="mjxgui_tab_container" data-tab="4">Symbol</div>
+    <div class="mjxgui_tab_container" data-tab="5">Greek</div>
+    <div class="mjxgui_tab_container" data-tab="6">Position</div>
+    <div class="mjxgui_tab_container" data-tab="7">Trigo</div>
 </div>
-<div class="mjxgui_tab _mjxgui_letters_tab" style="display: flex;" data-tab="1">
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Alpha" data-latex-data="Alpha">&Alpha;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Beta" data-latex-data="Beta">&Beta;</span>
+<div class="mjxgui_tab _mjxgui_brackets_tab" style="display: flex;" data-tab="1">
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Round" data-template-type="null" data-function-id="bracketr">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 127.049 484.398 C 107.221 458.197 90.453 427.536 76.746 392.416 C 63.039 357.295 56.185 320.92 56.185 283.29 C 56.185 250.121 61.309 218.346 71.558 187.964 C 83.533 152.703 102.03 117.582 127.049 82.602 L 152.8 82.602 C 136.698 111.59 126.052 132.286 120.861 144.691 C 112.743 163.923 106.356 183.992 101.698 204.897 C 95.977 230.958 93.116 257.159 93.116 283.499 C 93.116 350.535 113.01 417.501 152.8 484.398 L 127.049 484.398 Z" style=""/>
+            <path d="M 441.023 488.996 L 413.066 488.996 C 456.267 420.569 477.868 352.07 477.868 283.499 C 477.868 256.699 474.76 230.113 468.547 203.739 C 463.634 182.356 456.772 161.827 447.957 142.153 C 442.322 129.325 430.692 107.941 413.066 78.004 L 441.023 78.004 C 468.187 113.786 488.269 149.71 501.273 185.776 C 512.398 216.855 517.961 249.358 517.961 283.286 C 517.961 321.777 510.485 358.984 495.531 394.908 C 480.576 430.833 462.407 462.195 441.023 488.996 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Round Left" data-template-type="null" data-function-id="bracketrl">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 127.049 484.398 C 107.221 458.197 90.453 427.536 76.746 392.416 C 63.039 357.295 56.185 320.92 56.185 283.29 C 56.185 250.121 61.309 218.346 71.558 187.964 C 83.533 152.703 102.03 117.582 127.049 82.602 L 152.8 82.602 C 136.698 111.59 126.052 132.286 120.861 144.691 C 112.743 163.923 106.356 183.992 101.698 204.897 C 95.977 230.958 93.116 257.159 93.116 283.499 C 93.116 350.535 113.01 417.501 152.8 484.398 L 127.049 484.398 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Round Right" data-template-type="null" data-function-id="bracketrr">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 441.023 488.996 L 413.066 488.996 C 456.267 420.569 477.868 352.07 477.868 283.499 C 477.868 256.699 474.76 230.113 468.547 203.739 C 463.634 182.356 456.772 161.827 447.957 142.153 C 442.322 129.325 430.692 107.941 413.066 78.004 L 441.023 78.004 C 468.187 113.786 488.269 149.71 501.273 185.776 C 512.398 216.855 517.961 249.358 517.961 283.286 C 517.961 321.777 510.485 358.984 495.531 394.908 C 480.576 430.833 462.407 462.195 441.023 488.996 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Square" data-template-type="null" data-function-id="brackets">
+        <svg viewBox="0 0 567 567" >
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 72.604 484.097 L 72.604 82.903 L 148.954 82.903 L 148.954 114.818 L 107.222 114.818 L 107.222 452.182 L 148.954 452.182 L 148.954 484.097 L 72.604 484.097 Z"/>
+            <path d="M 416.81 82.903 L 416.81 484.097 L 493.16 484.097 L 493.16 452.182 L 451.428 452.182 L 451.428 114.818 L 493.16 114.818 L 493.16 82.903 L 416.81 82.903 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000031, -0.000035)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Square Left" data-template-type="null" data-function-id="bracketsl">
+        <svg viewBox="0 0 567 567" >
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 72.604 484.097 L 72.604 82.903 L 148.954 82.903 L 148.954 114.818 L 107.222 114.818 L 107.222 452.182 L 148.954 452.182 L 148.954 484.097 L 72.604 484.097 Z"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Square Right" data-template-type="null" data-function-id="bracketsr">
+        <svg viewBox="0 0 567 567" >
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 416.81 82.903 L 416.81 484.097 L 493.16 484.097 L 493.16 452.182 L 451.428 452.182 L 451.428 114.818 L 493.16 114.818 L 493.16 82.903 L 416.81 82.903 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000031, -0.000035)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Curly" data-template-type="null" data-function-id="bracketc">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.796 L 365.545 423.796 L 365.545 143.205 L 201.455 143.205 L 201.455 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 45.002 266.453 C 54.601 266.176 62.424 263.3 68.471 257.825 C 74.518 252.35 78.539 244.832 80.534 235.269 C 82.528 225.706 83.588 209.352 83.712 186.207 C 83.837 163.062 84.211 147.817 84.835 140.471 C 85.956 128.829 88.045 119.474 91.1 112.406 C 94.154 105.338 97.925 99.69 102.413 95.462 C 106.902 91.235 112.637 88.013 119.619 85.796 C 124.356 84.41 132.086 83.717 142.808 83.717 L 153.28 83.717 L 153.28 116.356 L 147.483 116.356 C 134.517 116.356 125.915 118.954 121.675 124.151 C 117.437 129.349 115.317 140.956 115.317 158.973 C 115.317 195.285 114.632 218.222 113.26 227.784 C 111.016 242.614 107.182 254.048 101.76 262.086 C 96.336 270.125 87.827 277.262 76.233 283.499 C 89.947 289.875 99.889 299.611 106.06 312.708 C 112.232 325.805 115.317 347.253 115.317 377.05 C 115.317 404.076 115.567 420.154 116.065 425.282 C 117.063 434.706 119.588 441.289 123.638 445.031 C 127.691 448.773 135.639 450.644 147.483 450.644 L 153.28 450.644 L 153.28 483.283 L 142.808 483.283 C 130.589 483.283 121.737 482.174 116.252 479.956 C 108.273 476.769 101.665 471.606 96.429 464.469 C 91.193 457.331 87.795 448.288 86.237 437.339 C 84.678 426.39 83.837 408.441 83.712 383.495 C 83.588 358.548 82.528 341.293 80.534 331.731 C 78.539 322.167 74.518 314.614 68.471 309.07 C 62.424 303.526 54.601 300.616 45.002 300.34 L 45.002 266.453 Z" style=""/>
+            <path d="M 411.4 300.547 C 420.999 300.824 428.822 303.7 434.869 309.175 C 440.916 314.65 444.937 322.168 446.932 331.731 C 448.926 341.294 449.986 357.648 450.11 380.793 C 450.235 403.938 450.609 419.183 451.233 426.529 C 452.354 438.171 454.443 447.526 457.498 454.594 C 460.552 461.662 464.323 467.31 468.811 471.538 C 473.3 475.765 479.035 478.987 486.017 481.204 C 490.754 482.59 498.484 483.283 509.206 483.283 L 519.678 483.283 L 519.678 450.644 L 513.881 450.644 C 500.915 450.644 492.313 448.046 488.073 442.849 C 483.835 437.651 481.715 426.044 481.715 408.027 C 481.715 371.715 481.03 348.778 479.658 339.216 C 477.414 324.386 473.58 312.952 468.158 304.914 C 462.734 296.875 454.225 289.738 442.631 283.501 C 456.345 277.125 466.287 267.389 472.458 254.292 C 478.63 241.195 481.715 219.747 481.715 189.95 C 481.715 162.924 481.965 146.846 482.463 141.718 C 483.461 132.294 485.986 125.711 490.036 121.969 C 494.089 118.227 502.037 116.356 513.881 116.356 L 519.678 116.356 L 519.678 83.717 L 509.206 83.717 C 496.987 83.717 488.135 84.826 482.65 87.044 C 474.671 90.231 468.063 95.394 462.827 102.531 C 457.591 109.669 454.193 118.712 452.635 129.661 C 451.076 140.61 450.235 158.559 450.11 183.505 C 449.986 208.452 448.926 225.707 446.932 235.269 C 444.937 244.833 440.916 252.386 434.869 257.93 C 428.822 263.474 420.999 266.384 411.4 266.66 L 411.4 300.547 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000009, -0.000035)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Curly Left" data-template-type="null" data-function-id="bracketcl">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.796 L 365.545 423.796 L 365.545 143.205 L 201.455 143.205 L 201.455 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 45.002 266.453 C 54.601 266.176 62.424 263.3 68.471 257.825 C 74.518 252.35 78.539 244.832 80.534 235.269 C 82.528 225.706 83.588 209.352 83.712 186.207 C 83.837 163.062 84.211 147.817 84.835 140.471 C 85.956 128.829 88.045 119.474 91.1 112.406 C 94.154 105.338 97.925 99.69 102.413 95.462 C 106.902 91.235 112.637 88.013 119.619 85.796 C 124.356 84.41 132.086 83.717 142.808 83.717 L 153.28 83.717 L 153.28 116.356 L 147.483 116.356 C 134.517 116.356 125.915 118.954 121.675 124.151 C 117.437 129.349 115.317 140.956 115.317 158.973 C 115.317 195.285 114.632 218.222 113.26 227.784 C 111.016 242.614 107.182 254.048 101.76 262.086 C 96.336 270.125 87.827 277.262 76.233 283.499 C 89.947 289.875 99.889 299.611 106.06 312.708 C 112.232 325.805 115.317 347.253 115.317 377.05 C 115.317 404.076 115.567 420.154 116.065 425.282 C 117.063 434.706 119.588 441.289 123.638 445.031 C 127.691 448.773 135.639 450.644 147.483 450.644 L 153.28 450.644 L 153.28 483.283 L 142.808 483.283 C 130.589 483.283 121.737 482.174 116.252 479.956 C 108.273 476.769 101.665 471.606 96.429 464.469 C 91.193 457.331 87.795 448.288 86.237 437.339 C 84.678 426.39 83.837 408.441 83.712 383.495 C 83.588 358.548 82.528 341.293 80.534 331.731 C 78.539 322.167 74.518 314.614 68.471 309.07 C 62.424 303.526 54.601 300.616 45.002 300.34 L 45.002 266.453 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Curly Right" data-template-type="null" data-function-id="bracketcr">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.796 L 365.545 423.796 L 365.545 143.205 L 201.455 143.205 L 201.455 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 411.4 300.547 C 420.999 300.824 428.822 303.7 434.869 309.175 C 440.916 314.65 444.937 322.168 446.932 331.731 C 448.926 341.294 449.986 357.648 450.11 380.793 C 450.235 403.938 450.609 419.183 451.233 426.529 C 452.354 438.171 454.443 447.526 457.498 454.594 C 460.552 461.662 464.323 467.31 468.811 471.538 C 473.3 475.765 479.035 478.987 486.017 481.204 C 490.754 482.59 498.484 483.283 509.206 483.283 L 519.678 483.283 L 519.678 450.644 L 513.881 450.644 C 500.915 450.644 492.313 448.046 488.073 442.849 C 483.835 437.651 481.715 426.044 481.715 408.027 C 481.715 371.715 481.03 348.778 479.658 339.216 C 477.414 324.386 473.58 312.952 468.158 304.914 C 462.734 296.875 454.225 289.738 442.631 283.501 C 456.345 277.125 466.287 267.389 472.458 254.292 C 478.63 241.195 481.715 219.747 481.715 189.95 C 481.715 162.924 481.965 146.846 482.463 141.718 C 483.461 132.294 485.986 125.711 490.036 121.969 C 494.089 118.227 502.037 116.356 513.881 116.356 L 519.678 116.356 L 519.678 83.717 L 509.206 83.717 C 496.987 83.717 488.135 84.826 482.65 87.044 C 474.671 90.231 468.063 95.394 462.827 102.531 C 457.591 109.669 454.193 118.712 452.635 129.661 C 451.076 140.61 450.235 158.559 450.11 183.505 C 449.986 208.452 448.926 225.707 446.932 235.269 C 444.937 244.833 440.916 252.386 434.869 257.93 C 428.822 263.474 420.999 266.384 411.4 266.66 L 411.4 300.547 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000009, -0.000035)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Angled" data-template-type="null" data-function-id="bracketa">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.796 L 365.545 423.796 L 365.545 143.205 L 201.455 143.205 L 201.455 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 59.074 283.501 L 117.771 89.324 L 153.28 89.324 L 94.585 283.501 L 153.28 477.677 L 117.771 477.677 L 59.074 283.501 Z" style=""/>
+            <path d="M 415.608 283.5 L 474.305 477.677 L 509.814 477.677 L 451.119 283.5 L 509.814 89.324 L 474.305 89.324 L 415.608 283.5 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000073, 0.000052)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Angled Left" data-template-type="null" data-function-id="bracketal">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.796 L 365.545 423.796 L 365.545 143.205 L 201.455 143.205 L 201.455 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 59.074 283.501 L 117.771 89.324 L 153.28 89.324 L 94.585 283.501 L 153.28 477.677 L 117.771 477.677 L 59.074 283.501 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Angled Right" data-template-type="null" data-function-id="bracketar">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.796 L 365.545 423.796 L 365.545 143.205 L 201.455 143.205 L 201.455 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 415.608 283.5 L 474.305 477.677 L 509.814 477.677 L 451.119 283.5 L 509.814 89.324 L 474.305 89.324 L 415.608 283.5 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000073, 0.000052)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Vertical" data-template-type="null" data-function-id="bracketv">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 95.572 477.676 L 95.572 89.323 L 128.114 89.323 L 128.114 477.676 L 95.572 477.676 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000029, -0.000039)"/>
+            <path d="M 442.416 477.675 L 442.416 89.322 L 474.958 89.322 L 474.958 477.675 L 442.416 477.675 Z" style="transform-origin: 458.687px 283.499px;" transform="matrix(-1, 0, 0, -1, -0.000048, 0.000014)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Vertical Left" data-template-type="null" data-function-id="bracketvl">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 95.572 477.676 L 95.572 89.323 L 128.114 89.323 L 128.114 477.676 L 95.572 477.676 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000029, -0.000039)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Vertical Right" data-template-type="null" data-function-id="bracketvr">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 442.416 477.675 L 442.416 89.322 L 474.958 89.322 L 474.958 477.675 L 442.416 477.675 Z" style="transform-origin: 458.687px 283.499px;" transform="matrix(-1, 0, 0, -1, -0.000048, 0.000014)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Bracket Parallel" data-template-type="null" data-function-id="bracketp">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 423.795 L 365.545 423.795 L 365.545 143.204 L 201.455 143.204 L 201.455 423.795 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 118.213 477.676 L 118.213 89.323 L 147.016 89.323 L 147.016 477.676 L 118.213 477.676 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000012, -0.000065)"/>
+            <path d="M 61.365 477.675 L 61.365 89.322 L 90.168 89.322 L 90.168 477.675 L 61.365 477.675 Z" style="transform-origin: 75.766px 283.499px;" transform="matrix(-1, 0, 0, -1, -0.000001, -0.000032)"/>
+            <path d="M 481.897 477.676 L 481.897 89.323 L 510.7 89.323 L 510.7 477.676 L 481.897 477.676 Z" style="transform-origin: 496.299px 283.5px;" transform="matrix(-1, 0, 0, -1, -0.000039, -0.000037)"/>
+            <path d="M 425.049 477.675 L 425.049 89.322 L 453.852 89.322 L 453.852 477.675 L 425.049 477.675 Z" style="transform-origin: 439.45px 283.499px;" transform="matrix(-1, 0, 0, -1, -0.000064, -0.000032)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Vertical Bar" data-template-type="null" data-function-id="pipe">
+        <svg viewBox="0 0 567 567">
+            <path d="M 366.427 423.796 L 500 423.796 L 500 143.205 L 366.427 143.205 L 366.427 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 267.458 477.677 L 267.458 89.324 L 300 89.324 L 300 477.677 L 267.458 477.677 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000012, 0.000072)"/>
+            <path d="M 66.427 423.796 L 200 423.796 L 200 143.205 L 66.427 143.205 L 66.427 423.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overline" data-template-type="one" data-latex-data="overline">
+        <svg viewBox="0 0 567 567" >
+            <path d="M 216.714 449.796 L 350.287 449.796 L 350.287 169.205 L 216.714 169.205 L 216.714 449.796 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 270.229 296.439 L 270.229 -122.981 L 296.77 -122.981 L 296.77 296.439 L 270.229 296.439 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, -1, 1, 0, -0.000013, -0.000037)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Underline" data-template-type="one" data-latex-data="underline">
+        <svg viewBox="0 0 567 567">
+            <path d="M 216.713 380.59 L 350.286 380.59 L 350.286 99.999 L 216.713 99.999 L 216.713 380.59 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 270.229 696.44 L 270.229 277.02 L 296.77 277.02 L 296.77 696.44 L 270.229 696.44 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, -1, 1, 0, -0.000027, -0.000023)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overbrace" data-template-type="one" data-latex-data="overbrace">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 480.591 L 365.545 480.591 L 365.545 200 L 201.455 200 L 201.455 480.591 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 229.361 99.261 C 238.96 98.984 246.783 96.108 252.83 90.633 C 258.877 85.158 262.898 77.64 264.893 68.077 C 266.887 58.514 267.947 42.16 268.071 19.015 C 268.196 -4.13 268.57 -19.375 269.194 -26.721 C 270.315 -38.363 272.404 -47.718 275.459 -54.786 C 278.513 -61.854 282.284 -67.502 286.772 -71.73 C 291.261 -75.957 296.996 -79.179 303.978 -81.396 C 308.715 -82.782 316.445 -83.475 327.167 -83.475 L 337.639 -83.475 L 337.639 -50.836 L 331.842 -50.836 C 318.876 -50.836 310.274 -48.238 306.034 -43.041 C 301.796 -37.843 299.676 -26.236 299.676 -8.219 C 299.676 28.093 298.991 51.03 297.619 60.592 C 295.375 75.422 291.541 86.856 286.119 94.894 C 280.695 102.933 272.186 110.07 260.592 116.307 C 274.306 122.683 284.248 132.419 290.419 145.516 C 296.591 158.613 299.676 180.061 299.676 209.858 C 299.676 236.884 299.926 252.962 300.424 258.09 C 301.422 267.514 303.947 274.097 307.997 277.839 C 312.05 281.581 319.998 283.452 331.842 283.452 L 337.639 283.452 L 337.639 316.091 L 327.167 316.091 C 314.948 316.091 306.096 314.982 300.611 312.764 C 292.632 309.577 286.024 304.414 280.788 297.277 C 275.552 290.139 272.154 281.096 270.596 270.147 C 269.037 259.198 268.196 241.249 268.071 216.303 C 267.947 191.356 266.887 174.101 264.893 164.539 C 262.898 154.975 258.877 147.422 252.83 141.878 C 246.783 136.334 238.96 133.424 229.361 133.148 L 229.361 99.261 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 0.000013, 0.000026)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Underbrace" data-template-type="one" data-latex-data="underbrace">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.455 358.356 L 365.545 358.356 L 365.545 77.765 L 201.455 77.765 L 201.455 358.356 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 229.361 471.186 C 238.96 471.463 246.783 474.339 252.83 479.814 C 258.877 485.289 262.898 492.807 264.893 502.37 C 266.887 511.933 267.947 528.287 268.071 551.432 C 268.196 574.577 268.57 589.822 269.194 597.168 C 270.315 608.81 272.404 618.165 275.459 625.233 C 278.513 632.301 282.284 637.949 286.772 642.177 C 291.261 646.404 296.996 649.626 303.978 651.843 C 308.715 653.229 316.445 653.922 327.167 653.922 L 337.639 653.922 L 337.639 621.283 L 331.842 621.283 C 318.876 621.283 310.274 618.685 306.034 613.488 C 301.796 608.29 299.676 596.683 299.676 578.666 C 299.676 542.354 298.991 519.417 297.619 509.855 C 295.375 495.025 291.541 483.591 286.119 475.553 C 280.695 467.514 272.186 460.377 260.592 454.14 C 274.306 447.764 284.248 438.028 290.419 424.931 C 296.591 411.834 299.676 390.386 299.676 360.589 C 299.676 333.563 299.926 317.485 300.424 312.357 C 301.422 302.933 303.947 296.35 307.997 292.608 C 312.05 288.866 319.998 286.995 331.842 286.995 L 337.639 286.995 L 337.639 254.356 L 327.167 254.356 C 314.948 254.356 306.096 255.465 300.611 257.683 C 292.632 260.87 286.024 266.033 280.788 273.17 C 275.552 280.308 272.154 289.351 270.596 300.3 C 269.037 311.249 268.196 329.198 268.071 354.144 C 267.947 379.091 266.887 396.346 264.893 405.908 C 262.898 415.472 258.877 423.025 252.83 428.569 C 246.783 434.113 238.96 437.023 229.361 437.299 L 229.361 471.186 Z" style="transform-origin: 283.5px 454.139px;" transform="matrix(0, -1, 1, 0, 0.000027, -0.00004)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overset Overbrace" data-template-type="null" data-function-id="overset-overbrace">
+        <svg viewBox="0 0 567 567">
+            <path d="M 219.494 557.067 L 347.507 557.067 L 347.507 284.767 L 219.494 284.767 L 219.494 557.067 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 0.000008, 0.000077)"/>
+            <path d="M 229.361 248.092 C 238.96 247.815 246.783 244.939 252.83 239.464 C 258.877 233.989 262.898 226.471 264.893 216.908 C 266.887 207.345 267.947 190.991 268.071 167.846 C 268.196 144.701 268.57 129.456 269.194 122.11 C 270.315 110.468 272.404 101.113 275.459 94.045 C 278.513 86.977 282.284 81.329 286.772 77.101 C 291.261 72.874 296.996 69.652 303.978 67.435 C 308.715 66.049 316.445 65.356 327.167 65.356 L 337.639 65.356 L 337.639 97.995 L 331.842 97.995 C 318.876 97.995 310.274 100.593 306.034 105.79 C 301.796 110.988 299.676 122.595 299.676 140.612 C 299.676 176.924 298.991 199.861 297.619 209.423 C 295.375 224.253 291.541 235.687 286.119 243.725 C 280.695 251.764 272.186 258.901 260.592 265.138 C 274.306 271.514 284.248 281.25 290.419 294.347 C 296.591 307.444 299.676 328.892 299.676 358.689 C 299.676 385.715 299.926 401.793 300.424 406.921 C 301.422 416.345 303.947 422.928 307.997 426.67 C 312.05 430.412 319.998 432.283 331.842 432.283 L 337.639 432.283 L 337.639 464.922 L 327.167 464.922 C 314.948 464.922 306.096 463.813 300.611 461.595 C 292.632 458.408 286.024 453.245 280.788 446.108 C 275.552 438.97 272.154 429.927 270.596 418.978 C 269.037 408.029 268.196 390.08 268.071 365.134 C 267.947 340.187 266.887 322.932 264.893 313.37 C 262.898 303.806 258.877 296.253 252.83 290.709 C 246.783 285.165 238.96 282.255 229.361 281.979 L 229.361 248.092 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 0.000048, 0.000024)"/>
+            <path d="M 237.052 216.174 L 329.946 216.174 L 329.946 20.049 L 237.052 20.049 L 237.052 216.174 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-origin: 283.499px 118.112px;" transform="matrix(0, 1, -1, 0, 0.000056, -0.00004)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Underset Underbrace" data-template-type="null" data-function-id="underset-underbrace">
+        <svg viewBox="0 0 567 567">
+            <path d="M 219.494 -0.477 L 347.507 -0.477 L 347.507 271.823 L 219.494 271.823 L 219.494 -0.477 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-origin: 283.5px 135.673px;" transform="matrix(0, -1, 1, 0, 0.000024, 0.000001)"/>
+            <path d="M 229.361 308.497 C 238.96 308.774 246.783 311.65 252.83 317.125 C 258.877 322.6 262.898 330.118 264.893 339.681 C 266.887 349.244 267.947 365.598 268.071 388.743 C 268.196 411.888 268.57 427.133 269.194 434.479 C 270.315 446.121 272.404 455.476 275.459 462.544 C 278.513 469.612 282.284 475.26 286.772 479.488 C 291.261 483.715 296.996 486.937 303.978 489.154 C 308.715 490.54 316.445 491.233 327.167 491.233 L 337.639 491.233 L 337.639 458.594 L 331.842 458.594 C 318.876 458.594 310.274 455.996 306.034 450.799 C 301.796 445.601 299.676 433.994 299.676 415.977 C 299.676 379.665 298.991 356.728 297.619 347.166 C 295.375 332.336 291.541 320.902 286.119 312.864 C 280.695 304.825 272.186 297.688 260.592 291.451 C 274.306 285.075 284.248 275.339 290.419 262.242 C 296.591 249.145 299.676 227.697 299.676 197.9 C 299.676 170.874 299.926 154.796 300.424 149.668 C 301.422 140.244 303.947 133.661 307.997 129.919 C 312.05 126.177 319.998 124.306 331.842 124.306 L 337.639 124.306 L 337.639 91.667 L 327.167 91.667 C 314.948 91.667 306.096 92.776 300.611 94.994 C 292.632 98.181 286.024 103.344 280.788 110.481 C 275.552 117.619 272.154 126.662 270.596 137.611 C 269.037 148.56 268.196 166.509 268.071 191.455 C 267.947 216.402 266.887 233.657 264.893 243.219 C 262.898 252.783 258.877 260.336 252.83 265.88 C 246.783 271.424 238.96 274.334 229.361 274.61 L 229.361 308.497 Z" style="transform-origin: 283.5px 291.45px;" transform="matrix(0, -1, 1, 0, 0.000026, -0.000001)"/>
+            <path d="M 237.052 340.415 L 329.946 340.415 L 329.946 536.54 L 237.052 536.54 L 237.052 340.415 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-origin: 283.499px 438.477px;" transform="matrix(0, -1, 1, 0, 0.000034, 0.000062)"/>
+        </svg>
+    </span>
+</div>
+<div class="mjxgui_tab _mjxgui_operators_tab" data-tab="2">
+    <span class="mjxgui-btn mjxgui-function" title="Strike Through" data-template-type="one" data-latex-data="enclose{horizontalstrike}">
+        <svg viewBox="0 0 567 567">
+            <path d="M 191.857 461.898 L 375.143 461.898 L 375.143 105.102 L 191.857 105.102 L 191.857 461.898 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 270.23 493.21 L 270.23 73.79 L 296.771 73.79 L 296.771 493.21 L 270.23 493.21 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, -1, 1, 0, 0.000029, 0.000031)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Forward Cancel" data-template-type="one" data-latex-data="cancel">
+        <svg viewBox="0 0 567 567">
+            <path d="M 191.857 461.898 L 375.143 461.898 L 375.143 105.102 L 191.857 105.102 L 191.857 461.898 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 25px;" x1="487.708" y1="62.976" x2="79.292" y2="504.024"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Backward Cancel" data-template-type="one" data-latex-data="bcancel">
+        <svg viewBox="0 0 567 567">
+            <path d="M 191.857 461.898 L 375.143 461.898 L 375.143 105.102 L 191.857 105.102 L 191.857 461.898 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 25px; transform-box: fill-box; transform-origin: 50% 50%;" x1="487.708" y1="504.024" x2="79.292" y2="62.976" transform="matrix(-1, 0, 0, -1, 0.00002, 0.000001)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Square Root" data-template-type="null" data-function-id="sqrt">
+        <svg viewBox="0 0 567 567">
+            <path d="M 296 127.545 L 296 100 L 500 100 L 500 127.545 L 296 127.545 Z" style=""/>
+            <path d="M 283.626 100 L 300 100 L 230.969 500 L 121.25 290.246 L 77.44 308.934 L 69.926 295.787 L 136.516 264.768 L 226.111 433.849 L 283.626 100 Z" style=""/>
+            <path d="M 331.07 448.621 L 461.968 448.621 L 461.968 166.573 L 331.07 166.573 L 331.07 448.621 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Nth Root" data-template-type="null" data-function-id="nsqrt">
+        <svg viewBox="0 0 567 567">
+            <path d="M 296 127.545 L 296 100 L 500 100 L 500 127.545 L 296 127.545 Z" style=""/>
+            <path d="M 283.626 100 L 300 100 L 230.969 500 L 121.25 290.246 L 77.44 308.934 L 69.926 295.787 L 136.516 264.768 L 226.111 433.849 L 283.626 100 Z" style=""/>
+            <path d="M 331.07 448.621 L 461.968 448.621 L 461.968 166.573 L 331.07 166.573 L 331.07 448.621 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 146.529 226.385 L 227.355 226.385 L 227.355 71.004 L 146.529 71.004 L 146.529 226.385 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 16px;"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Integral" data-template-type="one" data-latex-data="displaystyle\\int">
+        <svg viewBox="0 0 567 567">
+            <path d="M 300 449.558 L 400 449.558 L 400 168.51 L 300 168.51 L 300 449.558 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path style="font-size: 235.429px; line-height: 1.25; font-family: Symbol; stroke-width: 0.588573;" d="M 263.761 65.607 C 275.038 65.607 284.233 68.481 291.339 74.227 C 298.446 79.975 302 87.46 302 96.685 C 302 103.643 299.914 109.086 295.743 113.019 C 291.725 116.952 286.087 118.917 278.824 118.917 C 269.555 118.917 262.601 114.004 257.966 104.172 C 253.331 94.19 248.774 89.2 244.293 89.2 C 228.535 89.2 219.496 137.217 217.179 233.252 C 216.56 252.762 216.096 267.962 215.789 278.851 C 214.244 322.406 211.616 357.794 207.909 385.016 C 204.354 412.24 199.488 432.883 193.308 446.948 C 185.892 464.038 176.159 477.347 164.108 486.874 C 152.057 496.553 139.077 501.393 125.173 501.393 C 113.894 501.393 104.702 498.445 97.595 492.546 C 90.332 486.8 86.701 479.313 86.701 470.088 C 86.701 463.281 88.71 457.915 92.727 453.981 C 96.745 450.2 102.461 448.311 109.877 448.311 C 119.148 448.311 126.1 453.15 130.735 462.828 C 135.525 472.66 140.313 477.574 145.103 477.574 C 160.244 477.574 169.205 427.44 171.986 327.17 C 172.45 310.384 172.76 297.375 172.914 288.151 C 174.305 244.746 176.776 209.584 180.33 182.664 C 183.883 155.743 188.904 134.798 195.393 119.824 C 202.809 102.734 212.466 89.426 224.362 79.897 C 236.413 70.37 249.546 65.607 263.761 65.607 Z" aria-label="∫"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Integral with Limits" data-template-type="three" data-latex-data="displaystyle\\int\\limits">
+        <svg viewBox="0 0 567 567">
+            <path d="M 337 400 L 437 400 L 437 168.51 L 337 168.51 L 337 400 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path style="font-size: 235.429px; line-height: 1.25; font-family: Symbol; stroke-width: 0.588573;" d="M 263.761 65.607 C 275.038 65.607 284.233 68.481 291.339 74.227 C 298.446 79.975 302 87.46 302 96.685 C 302 103.643 299.914 109.086 295.743 113.019 C 291.725 116.952 286.087 118.917 278.824 118.917 C 269.555 118.917 262.601 114.004 257.966 104.172 C 253.331 94.19 248.774 89.2 244.293 89.2 C 228.535 89.2 219.496 137.217 217.179 233.252 C 216.56 252.762 216.096 267.962 215.789 278.851 C 214.244 322.406 211.616 357.794 207.909 385.016 C 204.354 412.24 199.488 432.883 193.308 446.948 C 185.892 464.038 176.159 477.347 164.108 486.874 C 152.057 496.553 139.077 501.393 125.173 501.393 C 113.894 501.393 104.702 498.445 97.595 492.546 C 90.332 486.8 86.701 479.313 86.701 470.088 C 86.701 463.281 88.71 457.915 92.727 453.981 C 96.745 450.2 102.461 448.311 109.877 448.311 C 119.148 448.311 126.1 453.15 130.735 462.828 C 135.525 472.66 140.313 477.574 145.103 477.574 C 160.244 477.574 169.205 427.44 171.986 327.17 C 172.45 310.384 172.76 297.375 172.914 288.151 C 174.305 244.746 176.776 209.584 180.33 182.664 C 183.883 155.743 188.904 134.798 195.393 119.824 C 202.809 102.734 212.466 89.426 224.362 79.897 C 236.413 70.37 249.546 65.607 263.761 65.607 Z" id="text1" aria-label="∫"/>
+            <path d="M 328.113 88.607 L 452.361 88.607 L 452.361 52.214 L 328.113 52.214 L 328.113 88.607 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 213.865 501.393 L 338.113 501.393 L 338.113 465 L 213.865 465 L 213.865 501.393 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Double Integral" data-template-type="one" data-latex-data="displaystyle\\iint">
+        <svg viewBox="0 0 567 567">
+            <path d="M 380.417 448.879 L 480.417 448.879 L 480.417 167.831 L 380.417 167.831 L 380.417 448.879 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path style="font-size: 235.429px; line-height: 1.25; font-family: Symbol; stroke-width: 0.588573;" d="M 233.336 65.607 C 244.613 65.607 253.808 68.481 260.914 74.227 C 268.021 79.975 271.575 87.46 271.575 96.685 C 271.575 103.643 269.489 109.086 265.318 113.019 C 261.3 116.952 255.662 118.917 248.399 118.917 C 239.13 118.917 232.176 114.004 227.541 104.172 C 222.906 94.19 218.349 89.2 213.868 89.2 C 198.11 89.2 189.071 137.217 186.754 233.252 C 186.135 252.762 185.671 267.962 185.364 278.851 C 183.819 322.406 181.191 357.794 177.484 385.016 C 173.929 412.24 169.063 432.883 162.883 446.948 C 155.467 464.038 145.734 477.347 133.683 486.874 C 121.632 496.553 108.652 501.393 94.748 501.393 C 83.469 501.393 74.277 498.445 67.17 492.546 C 59.907 486.8 56.276 479.313 56.276 470.088 C 56.276 463.281 58.285 457.915 62.302 453.981 C 66.32 450.2 72.036 448.311 79.452 448.311 C 88.723 448.311 95.675 453.15 100.31 462.828 C 105.1 472.66 109.888 477.574 114.678 477.574 C 129.819 477.574 138.78 427.44 141.561 327.17 C 142.025 310.384 142.335 297.375 142.489 288.151 C 143.88 244.746 146.351 209.584 149.905 182.664 C 153.458 155.743 158.479 134.798 164.968 119.824 C 172.384 102.734 182.041 89.426 193.937 79.897 C 205.988 70.37 219.121 65.607 233.336 65.607 Z" id="text1" aria-label="∫"/>
+            <path style="font-size: 235.429px; line-height: 1.25; font-family: Symbol; stroke-width: 0.588573;" d="M 361.761 65.607 C 373.038 65.607 382.233 68.481 389.339 74.227 C 396.446 79.975 400 87.46 400 96.685 C 400 103.643 397.914 109.086 393.743 113.019 C 389.725 116.952 384.087 118.917 376.824 118.917 C 367.555 118.917 360.601 114.004 355.966 104.172 C 351.331 94.19 346.774 89.2 342.293 89.2 C 326.535 89.2 317.496 137.217 315.179 233.252 C 314.56 252.762 314.096 267.962 313.789 278.851 C 312.244 322.406 309.616 357.794 305.909 385.016 C 302.354 412.24 297.488 432.883 291.308 446.948 C 283.892 464.038 274.159 477.347 262.108 486.874 C 250.057 496.553 237.077 501.393 223.173 501.393 C 211.894 501.393 202.702 498.445 195.595 492.546 C 188.332 486.8 184.701 479.313 184.701 470.088 C 184.701 463.281 186.71 457.915 190.727 453.981 C 194.745 450.2 200.461 448.311 207.877 448.311 C 217.148 448.311 224.1 453.15 228.735 462.828 C 233.525 472.66 238.313 477.574 243.103 477.574 C 258.244 477.574 267.205 427.44 269.986 327.17 C 270.45 310.384 270.76 297.375 270.914 288.151 C 272.305 244.746 274.776 209.584 278.33 182.664 C 281.883 155.743 286.904 134.798 293.393 119.824 C 300.809 102.734 310.466 89.426 322.362 79.897 C 334.413 70.37 347.546 65.607 361.761 65.607 Z" id="path-1" aria-label="∫"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Triple Integral" data-template-type="one" data-latex-data="displaystyle\\iiint">
+        <svg viewBox="0 0 567 567">
+            <path d="M 408.417 448.879 L 508.417 448.879 L 508.417 167.831 L 408.417 167.831 L 408.417 448.879 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path style="font-size: 235.429px; line-height: 1.25; font-family: Symbol; stroke-width: 0.588573;" d="M 310.336 65.607 C 321.613 65.607 330.808 68.481 337.914 74.227 C 345.021 79.975 348.575 87.46 348.575 96.685 C 348.575 103.643 346.489 109.086 342.318 113.019 C 338.3 116.952 332.662 118.917 325.399 118.917 C 316.13 118.917 309.176 114.004 304.541 104.172 C 299.906 94.19 295.349 89.2 290.868 89.2 C 275.11 89.2 266.071 137.217 263.754 233.252 C 263.135 252.762 262.671 267.962 262.364 278.851 C 260.819 322.406 258.191 357.794 254.484 385.016 C 250.929 412.24 246.063 432.883 239.883 446.948 C 232.467 464.038 222.734 477.347 210.683 486.874 C 198.632 496.553 185.652 501.393 171.748 501.393 C 160.469 501.393 151.277 498.445 144.17 492.546 C 136.907 486.8 133.276 479.313 133.276 470.088 C 133.276 463.281 135.285 457.915 139.302 453.981 C 143.32 450.2 149.036 448.311 156.452 448.311 C 165.723 448.311 172.675 453.15 177.31 462.828 C 182.1 472.66 186.888 477.574 191.678 477.574 C 206.819 477.574 215.78 427.44 218.561 327.17 C 219.025 310.384 219.335 297.375 219.489 288.151 C 220.88 244.746 223.351 209.584 226.905 182.664 C 230.458 155.743 235.479 134.798 241.968 119.824 C 249.384 102.734 259.041 89.426 270.937 79.897 C 282.988 70.37 296.121 65.607 310.336 65.607 Z" id="text1" aria-label="∫"/>
+            <path style="font-size: 235.429px; line-height: 1.25; font-family: Symbol; stroke-width: 0.588573;" d="M 411.761 65.607 C 423.038 65.607 432.233 68.481 439.339 74.227 C 446.446 79.975 450 87.46 450 96.685 C 450 103.643 447.914 109.086 443.743 113.019 C 439.725 116.952 434.087 118.917 426.824 118.917 C 417.555 118.917 410.601 114.004 405.966 104.172 C 401.331 94.19 396.774 89.2 392.293 89.2 C 376.535 89.2 367.496 137.217 365.179 233.252 C 364.56 252.762 364.096 267.962 363.789 278.851 C 362.244 322.406 359.616 357.794 355.909 385.016 C 352.354 412.24 347.488 432.883 341.308 446.948 C 333.892 464.038 324.159 477.347 312.108 486.874 C 300.057 496.553 287.077 501.393 273.173 501.393 C 261.894 501.393 252.702 498.445 245.595 492.546 C 238.332 486.8 234.701 479.313 234.701 470.088 C 234.701 463.281 236.71 457.915 240.727 453.981 C 244.745 450.2 250.461 448.311 257.877 448.311 C 267.148 448.311 274.1 453.15 278.735 462.828 C 283.525 472.66 288.313 477.574 293.103 477.574 C 308.244 477.574 317.205 427.44 319.986 327.17 C 320.45 310.384 320.76 297.375 320.914 288.151 C 322.305 244.746 324.776 209.584 328.33 182.664 C 331.883 155.743 336.904 134.798 343.393 119.824 C 350.809 102.734 360.466 89.426 372.362 79.897 C 384.413 70.37 397.546 65.607 411.761 65.607 Z" id="path-1" aria-label="∫"/>
+            <path style="font-size: 235.429px; line-height: 1.25; font-family: Symbol; stroke-width: 0.588573;" d="M 209.24 65.607 C 220.517 65.607 229.712 68.481 236.818 74.227 C 243.925 79.975 247.479 87.46 247.479 96.685 C 247.479 103.643 245.393 109.086 241.222 113.019 C 237.204 116.952 231.566 118.917 224.303 118.917 C 215.034 118.917 208.08 114.004 203.445 104.172 C 198.81 94.19 194.253 89.2 189.772 89.2 C 174.014 89.2 164.975 137.217 162.658 233.252 C 162.039 252.762 161.575 267.962 161.268 278.851 C 159.723 322.406 157.095 357.794 153.388 385.016 C 149.833 412.24 144.967 432.883 138.787 446.948 C 131.371 464.038 121.638 477.347 109.587 486.874 C 97.536 496.553 84.556 501.393 70.652 501.393 C 59.373 501.393 50.181 498.445 43.074 492.546 C 35.811 486.8 32.18 479.313 32.18 470.088 C 32.18 463.281 34.189 457.915 38.206 453.981 C 42.224 450.2 47.94 448.311 55.356 448.311 C 64.627 448.311 71.579 453.15 76.214 462.828 C 81.004 472.66 85.792 477.574 90.582 477.574 C 105.723 477.574 114.684 427.44 117.465 327.17 C 117.929 310.384 118.239 297.375 118.393 288.151 C 119.784 244.746 122.255 209.584 125.809 182.664 C 129.362 155.743 134.383 134.798 140.872 119.824 C 148.288 102.734 157.945 89.426 169.841 79.897 C 181.892 70.37 195.025 65.607 209.24 65.607 Z" id="path-2" aria-label="∫"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Contour Integral" data-template-type="one" data-latex-data="displaystyle\\oint">
+        <svg viewBox="0 0 567 567">
+            <path d="M 300 445.14 L 400 445.14 L 400 164.092 L 300 164.092 L 300 445.14 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g id="layer1" transform="matrix(1.756574, 0, 0, 1.827911, -8.084576, 20.780811)" style="">
+                <path d="m 119.44518,94.980941 q 16.22821,6.100829 23.42719,15.740139 7.32099,9.63931 7.32099,24.89139 0,16.96031 -9.51729,27.9418 -9.39528,10.98149 -27.9418,15.49611 l -2.1963,12.20166 q -5.36873,29.89407 -15.49611,42.58379 -10.127378,12.68973 -28.673901,12.68973 -9.151245,0 -14.886025,-3.41647 -5.734781,-3.41646 -5.734781,-9.02922 0,-2.80639 1.952266,-5.1247 1.952266,-2.1963 4.392598,-2.1963 3.050415,0 6.10083,3.05042 l 6.344863,6.46688 q 2.440332,2.44033 6.222847,2.44033 11.46956,0 17.204341,-20.01073 5.73478,-19.76668 5.73478,-41.24161 -19.522656,-8.17511 -24.525337,-17.44837 -5.978814,-11.22553 -5.978814,-24.52534 0,-13.78787 8.541163,-25.50147 5.00268,-6.83293 10.981494,-10.371408 6.10083,-3.538482 17.570386,-6.10083 3.90454,-35.018765 14.88603,-51.124956 10.98149,-16.228208 30.62617,-16.228208 9.39527,0 15.37409,3.294448 5.97881,3.172432 5.97881,8.175112 0,2.928399 -1.95226,5.002681 -1.95227,2.074282 -4.51462,2.074282 -3.29445,0 -5.24671,-1.830249 l -8.41915,-7.809062 q -2.44033,-2.196299 -5.85679,-2.196299 -9.76133,0 -15.00805,15.008042 -5.24671,15.008042 -6.71091,47.098408 z m -0.48807,10.615449 q 0,22.32903 -4.63663,62.83854 25.37946,-8.54116 25.37946,-31.96834 0,-8.29713 -4.27058,-16.47225 -3.29445,-6.22284 -6.5889,-9.02922 -3.17243,-2.80639 -9.88335,-5.36873 z m -20.132735,-1.58622 q -25.50147,8.29713 -25.50147,33.0665 0,10.49343 5.368731,18.30249 5.490747,7.68704 15.740141,11.83561 0,-14.88603 2.928399,-46.61034 0.610083,-5.49075 1.464199,-16.59426 z" id="path-1"  transform="scale(0.94863921,1.0541415)" aria-label="∮"/>
+            </g>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Summation" data-template-type="one" data-latex-data="displaystyle\\sum">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g id="layer1" transform="matrix(1.599468, 0, 0, 1.370933, -8.515524, 74.72419)" style="">
+                <path d="M 192.788 94.33 C 190.403 80.06 186.237 69.834 180.28 63.652 C 174.405 57.38 164.203 54.245 149.67 54.245 L 95.716 54.245 L 161.223 144.639 L 161.223 147.503 L 88.689 235.718 L 172.537 235.718 C 180.717 235.718 185.996 234.216 188.381 231.217 C 190.763 228.308 192.428 221.31 193.382 210.22 L 198.145 210.22 L 198.145 262.168 L 61.531 262.168 L 61.531 254.532 L 140.976 158.001 L 63.199 50.702 L 63.199 43.339 L 197.073 43.339 L 197.073 94.33 L 192.788 94.33 Z" style="stroke-width: 0.461798;" aria-label="∑"/>
+            </g>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Summation with Lower Limit" data-template-type="two" data-latex-data="displaystyle\\sum">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g id="layer1" transform="matrix(1.599468, 0, 0, 1.370933, -8.515524, 74.72419)" style="">
+                <path d="M 192.788 94.33 C 190.403 80.06 186.237 69.834 180.28 63.652 C 174.405 57.38 164.203 54.245 149.67 54.245 L 95.716 54.245 L 161.223 144.639 L 161.223 147.503 L 88.689 235.718 L 172.537 235.718 C 180.717 235.718 185.996 234.216 188.381 231.217 C 190.763 228.308 192.428 221.31 193.382 210.22 L 198.145 210.22 L 198.145 262.168 L 61.531 262.168 L 61.531 254.532 L 140.976 158.001 L 63.199 50.702 L 63.199 43.339 L 197.073 43.339 L 197.073 94.33 L 192.788 94.33 Z" style="stroke-width: 0.461798;" aria-label="∑"/>
+            </g>
+            <path d="M 160.478 518 L 300 518 L 300 462.278 L 160.478 462.278 L 160.478 518 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Summation with Limits" data-template-type="three" data-latex-data="displaystyle\\sum">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g id="layer1" transform="matrix(1.599468, 0, 0, 1.370933, -8.515524, 74.72419)" style="">
+                <path d="M 192.788 94.33 C 190.403 80.06 186.237 69.834 180.28 63.652 C 174.405 57.38 164.203 54.245 149.67 54.245 L 95.716 54.245 L 161.223 144.639 L 161.223 147.503 L 88.689 235.718 L 172.537 235.718 C 180.717 235.718 185.996 234.216 188.381 231.217 C 190.763 228.308 192.428 221.31 193.382 210.22 L 198.145 210.22 L 198.145 262.168 L 61.531 262.168 L 61.531 254.532 L 140.976 158.001 L 63.199 50.702 L 63.199 43.339 L 197.073 43.339 L 197.073 94.33 L 192.788 94.33 Z" style="stroke-width: 0.461798;" aria-label="∑"/>
+            </g>
+            <path d="M 160.478 518 L 300 518 L 300 462.278 L 160.478 462.278 L 160.478 518 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 160.478 106 L 300 106 L 300 50.278 L 160.478 50.278 L 160.478 106 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Co Product" data-template-type="one" data-latex-data="displaystyle\\coprod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 62.914 435.566 L 62.914 428.989 C 71.618 428.989 77.735 427.993 81.266 426 C 88.456 421.881 92.051 416.897 92.051 411.052 L 92.428 160.534 C 92.428 145.919 82.653 138.146 63.103 137.216 L 62.914 131.236 L 153.916 131.236 L 153.916 137.216 C 135.123 137.216 125.726 144.126 125.726 157.945 L 125.726 415.037 L 268.757 414.839 L 269.514 158.941 C 269.514 147.647 259.739 140.339 240.189 137.016 L 240.189 131.236 L 330.624 131.038 L 330.435 136.818 C 311.768 138.943 302.434 146.716 302.434 160.136 L 302.434 408.859 C 302.434 420.418 311.768 427.262 330.435 429.388 L 330.435 435.963 L 62.914 435.566 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Co Product" data-template-type="two" data-latex-data="displaystyle\\coprod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 125.168 527.168 L 264.69 527.168 L 264.69 471.446 L 125.168 471.446 L 125.168 527.168 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 62.914 435.566 L 62.914 428.989 C 71.618 428.989 77.735 427.993 81.266 426 C 88.456 421.881 92.051 416.897 92.051 411.052 L 92.428 160.534 C 92.428 145.919 82.653 138.146 63.103 137.216 L 62.914 131.236 L 153.916 131.236 L 153.916 137.216 C 135.123 137.216 125.726 144.126 125.726 157.945 L 125.726 415.037 L 268.757 414.839 L 269.514 158.941 C 269.514 147.647 259.739 140.339 240.189 137.016 L 240.189 131.236 L 330.624 131.038 L 330.435 136.818 C 311.768 138.943 302.434 146.716 302.434 160.136 L 302.434 408.859 C 302.434 420.418 311.768 427.262 330.435 429.388 L 330.435 435.963 L 62.914 435.566 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Co Product" data-template-type="three" data-latex-data="displaystyle\\coprod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 125.168 527.168 L 264.69 527.168 L 264.69 471.446 L 125.168 471.446 L 125.168 527.168 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 125.168 100 L 264.69 100 L 264.69 44.278 L 125.168 44.278 L 125.168 100 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 62.914 435.566 L 62.914 428.989 C 71.618 428.989 77.735 427.993 81.266 426 C 88.456 421.881 92.051 416.897 92.051 411.052 L 92.428 160.534 C 92.428 145.919 82.653 138.146 63.103 137.216 L 62.914 131.236 L 153.916 131.236 L 153.916 137.216 C 135.123 137.216 125.726 144.126 125.726 157.945 L 125.726 415.037 L 268.757 414.839 L 269.514 158.941 C 269.514 147.647 259.739 140.339 240.189 137.016 L 240.189 131.236 L 330.624 131.038 L 330.435 136.818 C 311.768 138.943 302.434 146.716 302.434 160.136 L 302.434 408.859 C 302.434 420.418 311.768 427.262 330.435 429.388 L 330.435 435.963 L 62.914 435.566 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Product" data-template-type="one" data-latex-data="displaystyle\\prod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 62.914 131.434 L 62.914 138.011 C 71.618 138.011 77.735 139.007 81.266 141 C 88.456 145.119 92.051 150.103 92.051 155.948 L 92.428 406.466 C 92.428 421.081 82.653 428.854 63.103 429.784 L 62.914 435.764 L 153.916 435.764 L 153.916 429.784 C 135.123 429.784 125.726 422.874 125.726 409.055 L 125.726 151.963 L 268.757 152.161 L 269.514 408.059 C 269.514 419.353 259.739 426.661 240.189 429.984 L 240.189 435.764 L 330.624 435.962 L 330.435 430.182 C 311.768 428.057 302.434 420.284 302.434 406.864 L 302.434 158.141 C 302.434 146.582 311.768 139.738 330.435 137.612 L 330.435 131.037 L 62.914 131.434 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Product" data-template-type="two" data-latex-data="displaystyle\\prod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 125.168 527.168 L 264.69 527.168 L 264.69 471.446 L 125.168 471.446 L 125.168 527.168 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 62.914 131.434 L 62.914 138.011 C 71.618 138.011 77.735 139.007 81.266 141 C 88.456 145.119 92.051 150.103 92.051 155.948 L 92.428 406.466 C 92.428 421.081 82.653 428.854 63.103 429.784 L 62.914 435.764 L 153.916 435.764 L 153.916 429.784 C 135.123 429.784 125.726 422.874 125.726 409.055 L 125.726 151.963 L 268.757 152.161 L 269.514 408.059 C 269.514 419.353 259.739 426.661 240.189 429.984 L 240.189 435.764 L 330.624 435.962 L 330.435 430.182 C 311.768 428.057 302.434 420.284 302.434 406.864 L 302.434 158.141 C 302.434 146.582 311.768 139.738 330.435 137.612 L 330.435 131.037 L 62.914 131.434 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Product Underset" data-template-type="under" data-latex-data="prod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.462 527.713 L 492.984 527.713 L 492.984 471.991 L 353.462 471.991 L 353.462 527.713 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 62.914 131.434 L 62.914 138.011 C 71.618 138.011 77.735 139.007 81.266 141 C 88.456 145.119 92.051 150.103 92.051 155.948 L 92.428 406.466 C 92.428 421.081 82.653 428.854 63.103 429.784 L 62.914 435.764 L 153.916 435.764 L 153.916 429.784 C 135.123 429.784 125.726 422.874 125.726 409.055 L 125.726 151.963 L 268.757 152.161 L 269.514 408.059 C 269.514 419.353 259.739 426.661 240.189 429.984 L 240.189 435.764 L 330.624 435.962 L 330.435 430.182 C 311.768 428.057 302.434 420.284 302.434 406.864 L 302.434 158.141 C 302.434 146.582 311.768 139.738 330.435 137.612 L 330.435 131.037 L 62.914 131.434 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Product" data-template-type="three" data-latex-data="displaystyle\\prod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 125.168 527.168 L 264.69 527.168 L 264.69 471.446 L 125.168 471.446 L 125.168 527.168 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 125.168 100 L 264.69 100 L 264.69 44.278 L 125.168 44.278 L 125.168 100 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 62.914 131.434 L 62.914 138.011 C 71.618 138.011 77.735 139.007 81.266 141 C 88.456 145.119 92.051 150.103 92.051 155.948 L 92.428 406.466 C 92.428 421.081 82.653 428.854 63.103 429.784 L 62.914 435.764 L 153.916 435.764 L 153.916 429.784 C 135.123 429.784 125.726 422.874 125.726 409.055 L 125.726 151.963 L 268.757 152.161 L 269.514 408.059 C 269.514 419.353 259.739 426.661 240.189 429.984 L 240.189 435.764 L 330.624 435.962 L 330.435 430.182 C 311.768 428.057 302.434 420.284 302.434 406.864 L 302.434 158.141 C 302.434 146.582 311.768 139.738 330.435 137.612 L 330.435 131.037 L 62.914 131.434 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Product Overset Underset" data-template-type="over-under" data-latex-data="prod">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.462 527.713 L 492.984 527.713 L 492.984 471.991 L 353.462 471.991 L 353.462 527.713 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 353.478 100 L 493 100 L 493 44.278 L 353.478 44.278 L 353.478 100 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 62.914 131.434 L 62.914 138.011 C 71.618 138.011 77.735 139.007 81.266 141 C 88.456 145.119 92.051 150.103 92.051 155.948 L 92.428 406.466 C 92.428 421.081 82.653 428.854 63.103 429.784 L 62.914 435.764 L 153.916 435.764 L 153.916 429.784 C 135.123 429.784 125.726 422.874 125.726 409.055 L 125.726 151.963 L 268.757 152.161 L 269.514 408.059 C 269.514 419.353 259.739 426.661 240.189 429.984 L 240.189 435.764 L 330.624 435.962 L 330.435 430.182 C 311.768 428.057 302.434 420.284 302.434 406.864 L 302.434 158.141 C 302.434 146.582 311.768 139.738 330.435 137.612 L 330.435 131.037 L 62.914 131.434 Z" aria-label="∐"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Intersection" data-template-type="one" data-latex-data="displaystyle\\bigcap">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 300 424.024 L 269.727 424.024 L 269.727 225.243 C 269.727 217.049 266.823 207.851 261.016 197.649 C 255.211 187.45 248.118 178.95 239.74 172.149 C 222.414 158.2 202.139 151.224 178.91 151.224 C 155.302 151.224 134.359 159.116 116.081 174.896 C 97.804 190.676 88.666 208.853 88.666 229.429 L 88.379 424.024 L 58.678 424.024 L 58.678 230.998 C 58.678 201.705 70.672 176.552 94.661 155.54 C 118.651 134.53 147.4 124.024 180.911 124.024 C 210.231 124.024 235.837 132.742 257.733 150.178 C 270.299 160.118 280.436 172.019 288.146 185.881 C 295.858 199.744 299.713 212.864 299.713 225.243 L 300 424.024 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Intersection" data-template-type="two" data-latex-data="displaystyle\\bigcap">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 107.446 509.766 L 246.968 509.766 L 246.968 454.044 L 107.446 454.044 L 107.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 433.5 L 269.727 433.5 L 269.727 234.719 C 269.727 226.525 266.823 217.327 261.016 207.125 C 255.211 196.926 248.118 188.426 239.74 181.625 C 222.414 167.676 202.139 160.7 178.91 160.7 C 155.302 160.7 134.359 168.592 116.081 184.372 C 97.804 200.152 88.666 218.329 88.666 238.905 L 88.379 433.5 L 58.678 433.5 L 58.678 240.474 C 58.678 211.181 70.672 186.028 94.661 165.016 C 118.651 144.006 147.4 133.5 180.911 133.5 C 210.231 133.5 235.837 142.218 257.733 159.654 C 270.299 169.594 280.436 181.495 288.146 195.357 C 295.858 209.22 299.713 222.34 299.713 234.719 L 300 433.5 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Intersection" data-template-type="three" data-latex-data="displaystyle\\bigcap">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 107.446 509.766 L 246.968 509.766 L 246.968 454.044 L 107.446 454.044 L 107.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 107.446 112.956 L 246.968 112.956 L 246.968 57.234 L 107.446 57.234 L 107.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 433.5 L 269.727 433.5 L 269.727 234.719 C 269.727 226.525 266.823 217.327 261.016 207.125 C 255.211 196.926 248.118 188.426 239.74 181.625 C 222.414 167.676 202.139 160.7 178.91 160.7 C 155.302 160.7 134.359 168.592 116.081 184.372 C 97.804 200.152 88.666 218.329 88.666 238.905 L 88.379 433.5 L 58.678 433.5 L 58.678 240.474 C 58.678 211.181 70.672 186.028 94.661 165.016 C 118.651 144.006 147.4 133.5 180.911 133.5 C 210.231 133.5 235.837 142.218 257.733 159.654 C 270.299 169.594 280.436 181.495 288.146 195.357 C 295.858 209.22 299.713 222.34 299.713 234.719 L 300 433.5 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Intersection" data-template-type="under" data-latex-data="bigcap">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.462 527.713 L 492.984 527.713 L 492.984 471.991 L 353.462 471.991 L 353.462 527.713 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 424.024 L 269.727 424.024 L 269.727 225.243 C 269.727 217.049 266.823 207.851 261.016 197.649 C 255.211 187.45 248.118 178.95 239.74 172.149 C 222.414 158.2 202.139 151.224 178.91 151.224 C 155.302 151.224 134.359 159.116 116.081 174.896 C 97.804 190.676 88.666 208.853 88.666 229.429 L 88.379 424.024 L 58.678 424.024 L 58.678 230.998 C 58.678 201.705 70.672 176.552 94.661 155.54 C 118.651 134.53 147.4 124.024 180.911 124.024 C 210.231 124.024 235.837 132.742 257.733 150.178 C 270.299 160.118 280.436 172.019 288.146 185.881 C 295.858 199.744 299.713 212.864 299.713 225.243 L 300 424.024 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Intersection" data-template-type="over-under" data-latex-data="bigcap">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.462 527.713 L 492.984 527.713 L 492.984 471.991 L 353.462 471.991 L 353.462 527.713 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 353.478 100 L 493 100 L 493 44.278 L 353.478 44.278 L 353.478 100 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 424.024 L 269.727 424.024 L 269.727 225.243 C 269.727 217.049 266.823 207.851 261.016 197.649 C 255.211 187.45 248.118 178.95 239.74 172.149 C 222.414 158.2 202.139 151.224 178.91 151.224 C 155.302 151.224 134.359 159.116 116.081 174.896 C 97.804 190.676 88.666 208.853 88.666 229.429 L 88.379 424.024 L 58.678 424.024 L 58.678 230.998 C 58.678 201.705 70.672 176.552 94.661 155.54 C 118.651 134.53 147.4 124.024 180.911 124.024 C 210.231 124.024 235.837 132.742 257.733 150.178 C 270.299 160.118 280.436 172.019 288.146 185.881 C 295.858 199.744 299.713 212.864 299.713 225.243 L 300 424.024 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Union" data-template-type="one" data-latex-data="displaystyle\\bigcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Union" data-template-type="two" data-latex-data="displaystyle\\bigcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 107.446 509.766 L 246.968 509.766 L 246.968 454.044 L 107.446 454.044 L 107.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Union" data-template-type="three" data-latex-data="displaystyle\\bigcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 107.446 509.766 L 246.968 509.766 L 246.968 454.044 L 107.446 454.044 L 107.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 107.446 112.956 L 246.968 112.956 L 246.968 57.234 L 107.446 57.234 L 107.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Union" data-template-type="under" data-latex-data="bigcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Union" data-template-type="over-under" data-latex-data="bigcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 353.446 112.956 L 492.968 112.956 L 492.968 57.234 L 353.446 57.234 L 353.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Multiset" data-template-type="one" data-latex-data="displaystyle\\biguplus">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+            <path d="M 246.813 294.002 L 193 294.703 L 192.667 354.446 L 169.193 354.086 L 169.193 294.342 L 111.446 294.342 L 111.446 267.99 L 169.193 268.33 L 169.509 211.745 L 192.351 211.405 L 193 268.33 L 246.813 268.33 L 246.813 294.002 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Multiset" data-template-type="two" data-latex-data="displaystyle\\biguplus">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 111.446 509.766 L 250.968 509.766 L 250.968 454.044 L 111.446 454.044 L 111.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+            <path d="M 246.813 294.002 L 193 294.703 L 192.667 354.446 L 169.193 354.086 L 169.193 294.342 L 111.446 294.342 L 111.446 267.99 L 169.193 268.33 L 169.509 211.745 L 192.351 211.405 L 193 268.33 L 246.813 268.33 L 246.813 294.002 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Multiset" data-template-type="three" data-latex-data="displaystyle\\biguplus">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 111.446 509.766 L 250.968 509.766 L 250.968 454.044 L 111.446 454.044 L 111.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 111.446 112.956 L 250.968 112.956 L 250.968 57.234 L 111.446 57.234 L 111.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+            <path d="M 246.813 294.002 L 193 294.703 L 192.667 354.446 L 169.193 354.086 L 169.193 294.342 L 111.446 294.342 L 111.446 267.99 L 169.193 268.33 L 169.509 211.745 L 192.351 211.405 L 193 268.33 L 246.813 268.33 L 246.813 294.002 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Multiset" data-template-type="under" data-latex-data="biguplus">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+            <path d="M 246.813 294.002 L 193 294.703 L 192.667 354.446 L 169.193 354.086 L 169.193 294.342 L 111.446 294.342 L 111.446 267.99 L 169.193 268.33 L 169.509 211.745 L 192.351 211.405 L 193 268.33 L 246.813 268.33 L 246.813 294.002 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Multiset" data-template-type="over-under" data-latex-data="biguplus">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 353.446 112.956 L 492.968 112.956 L 492.968 57.234 L 353.446 57.234 L 353.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 300 133.5 L 269.727 133.5 L 269.727 332.281 C 269.727 340.475 266.823 349.673 261.016 359.875 C 255.211 370.074 248.118 378.574 239.74 385.375 C 222.414 399.324 202.139 406.3 178.91 406.3 C 155.302 406.3 134.359 398.408 116.081 382.628 C 97.804 366.848 88.666 348.671 88.666 328.095 L 88.379 133.5 L 58.678 133.5 L 58.678 326.526 C 58.678 355.819 70.672 380.972 94.661 401.984 C 118.651 422.994 147.4 433.5 180.911 433.5 C 210.231 433.5 235.837 424.782 257.733 407.346 C 270.299 397.406 280.436 385.505 288.146 371.643 C 295.858 357.78 299.713 344.66 299.713 332.281 L 300 133.5 Z" style=""/>
+            <path d="M 246.813 294.002 L 193 294.703 L 192.667 354.446 L 169.193 354.086 L 169.193 294.342 L 111.446 294.342 L 111.446 267.99 L 169.193 268.33 L 169.509 211.745 L 192.351 211.405 L 193 268.33 L 246.813 268.33 L 246.813 294.002 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjoint Union" data-template-type="one" data-latex-data="displaystyle\\bigsqcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 299.324 133.014 L 300.338 433.969 L 58.446 434.248 L 58.446 133.014 L 84.567 133.014 L 85.066 406.265 L 273.203 405.986 L 272.959 132.752 L 299.324 133.014 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjoint Union" data-template-type="two" data-latex-data="displaystyle\\bigsqcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 108.446 509.766 L 247.968 509.766 L 247.968 454.044 L 108.446 454.044 L 108.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 299.324 133.014 L 300.338 433.969 L 58.446 434.248 L 58.446 133.014 L 84.567 133.014 L 85.066 406.265 L 273.203 405.986 L 272.959 132.752 L 299.324 133.014 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjoint Union" data-template-type="three" data-latex-data="displaystyle\\bigsqcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 108.446 509.766 L 247.968 509.766 L 247.968 454.044 L 108.446 454.044 L 108.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 108.446 112.956 L 247.968 112.956 L 247.968 57.234 L 108.446 57.234 L 108.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 299.324 133.014 L 300.338 433.969 L 58.446 434.248 L 58.446 133.014 L 84.567 133.014 L 85.066 406.265 L 273.203 405.986 L 272.959 132.752 L 299.324 133.014 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjoint Union" data-template-type="under" data-latex-data="bigsqcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 299.324 133.762 L 300.338 434.717 L 58.446 434.996 L 58.446 133.762 L 84.567 133.762 L 85.066 407.013 L 273.203 406.734 L 272.959 133.5 L 299.324 133.762 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjoint Union" data-template-type="over-under" data-latex-data="bigsqcup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 353.446 112.956 L 492.968 112.956 L 492.968 57.234 L 353.446 57.234 L 353.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 299.324 133.762 L 300.338 434.717 L 58.446 434.996 L 58.446 133.762 L 84.567 133.762 L 85.066 407.013 L 273.203 406.734 L 272.959 133.5 L 299.324 133.762 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Conjunction" data-template-type="one" data-latex-data="bigwedge">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 330.338 433.979 L 299.728 434.241 L 180.581 188.117 L 61.45 433.7 L 30 433.422 L 180.311 123.735 L 330.338 433.979 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Conjunction" data-template-type="two" data-latex-data="bigwedge">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 108.446 509.766 L 247.968 509.766 L 247.968 454.044 L 108.446 454.044 L 108.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 433.979 L 299.728 434.241 L 180.581 188.117 L 61.45 433.7 L 30 433.422 L 180.311 123.735 L 330.338 433.979 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Conjunction" data-template-type="three" data-latex-data="bigwedge">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 108.446 509.766 L 247.968 509.766 L 247.968 454.044 L 108.446 454.044 L 108.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 108.446 112.956 L 247.968 112.956 L 247.968 57.234 L 108.446 57.234 L 108.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 433.979 L 299.728 434.241 L 180.581 188.117 L 61.45 433.7 L 30 433.422 L 180.311 123.735 L 330.338 433.979 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Conjunction" data-template-type="under" data-latex-data="bigwedge">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 433.979 L 299.728 434.241 L 180.581 188.117 L 61.45 433.7 L 30 433.422 L 180.311 123.735 L 330.338 433.979 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Conjunction" data-template-type="over-under" data-latex-data="bigwedge">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 353.446 112.956 L 492.968 112.956 L 492.968 57.234 L 353.446 57.234 L 353.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 433.979 L 299.728 434.241 L 180.581 188.117 L 61.45 433.7 L 30 433.422 L 180.311 123.735 L 330.338 433.979 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjunction" data-template-type="one" data-latex-data="bigvee">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 330.338 123.997 L 299.728 123.735 L 180.581 369.859 L 61.45 124.276 L 30 124.554 L 180.311 434.241 L 330.338 123.997 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjunction" data-template-type="two" data-latex-data="bigvee">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 108.446 509.766 L 247.968 509.766 L 247.968 454.044 L 108.446 454.044 L 108.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 123.997 L 299.728 123.735 L 180.581 369.859 L 61.45 124.276 L 30 124.554 L 180.311 434.241 L 330.338 123.997 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjunction" data-template-type="three" data-latex-data="bigvee">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 108.446 509.766 L 247.968 509.766 L 247.968 454.044 L 108.446 454.044 L 108.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 108.446 112.956 L 247.968 112.956 L 247.968 57.234 L 108.446 57.234 L 108.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 123.997 L 299.728 123.735 L 180.581 369.859 L 61.45 124.276 L 30 124.554 L 180.311 434.241 L 330.338 123.997 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjunction" data-template-type="under" data-latex-data="bigvee">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 123.997 L 299.728 123.735 L 180.581 369.859 L 61.45 124.276 L 30 124.554 L 180.311 434.241 L 330.338 123.997 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Disjunction" data-template-type="over-under" data-latex-data="bigvee">
+        <svg viewBox="0 0 567 567">
+            <path d="M 359.124 424.024 L 486.22 424.024 L 486.22 142.976 L 359.124 142.976 L 359.124 424.024 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 353.446 509.766 L 492.968 509.766 L 492.968 454.044 L 353.446 454.044 L 353.446 509.766 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 353.446 112.956 L 492.968 112.956 L 492.968 57.234 L 353.446 57.234 L 353.446 112.956 Z" style="fill-rule: evenodd; stroke-linecap: round; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); stroke-width: 12px;"/>
+            <path d="M 330.338 123.997 L 299.728 123.735 L 180.581 369.859 L 61.45 124.276 L 30 124.554 L 180.311 434.241 L 330.338 123.997 Z" style=""/>
+        </svg>
+    </span>
+</div>
+<div class="mjxgui_tab _mjxgui_arrows_tab" data-tab="3">
+    <span class="mjxgui-btn mjxgui-function" title="Over Right Arrow" data-template-type="one" data-latex-data="overrightarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 163.969 480.591 L 365.545 480.591 L 365.545 200 L 163.969 200 L 163.969 480.591 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 401.942 40.378 C 421.702 61.833 438.787 78.151 453.197 89.333 C 467.608 100.507 481.202 108.83 493.981 114.303 L 493.981 124.294 C 479.275 131.4 465.013 140.465 451.194 151.487 C 437.375 162.517 420.882 178.688 401.713 200 L 384.561 200 C 398.523 170.251 413.157 147.386 428.463 131.404 L 73.019 131.404 L 73.019 108.974 L 428.463 108.974 C 417.171 94.617 409.294 83.961 404.832 77.006 C 400.378 70.051 393.769 57.842 385.005 40.378 L 401.942 40.378 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Over Left Arrow" data-template-type="one" data-latex-data="overleftarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 206.712 480.591 L 408.288 480.591 L 408.288 200 L 206.712 200 L 206.712 480.591 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 401.942 200 C 421.702 178.545 438.787 162.227 453.197 151.045 C 467.608 139.871 481.202 131.548 493.981 126.075 L 493.981 116.084 C 479.275 108.978 465.013 99.913 451.194 88.891 C 437.375 77.861 420.882 61.69 401.713 40.378 L 384.561 40.378 C 398.523 70.127 413.157 92.992 428.463 108.974 L 73.019 108.974 L 73.019 131.404 L 428.463 131.404 C 417.171 145.761 409.294 156.417 404.832 163.372 C 400.378 170.327 393.769 182.536 385.005 200 L 401.942 200 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000021, 0.000009)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left Under Arrow" data-template-type="one" data-latex-data="xrightarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 157.965 203.689 L 349.476 203.689 L 349.476 100 L 157.965 100 L 157.965 203.689 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 407.961 203.689 C 427.721 225.144 444.806 241.462 459.216 252.644 C 473.627 263.818 487.221 272.141 500 277.614 L 500 287.605 C 485.294 294.711 471.032 303.776 457.213 314.798 C 443.394 325.828 426.901 341.999 407.732 363.311 L 390.58 363.311 C 404.542 333.562 419.176 310.697 434.482 294.715 L 79.038 294.715 L 79.038 272.285 L 434.482 272.285 C 423.19 257.928 415.313 247.272 410.851 240.317 C 406.397 233.362 399.788 221.153 391.024 203.689 L 407.961 203.689 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Right Under Arrow" data-template-type="one" data-latex-data="xleftarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 246.259 203.689 L 437.77 203.689 L 437.77 100 L 246.259 100 L 246.259 203.689 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 407.961 363.311 C 427.721 341.856 444.806 325.538 459.216 314.356 C 473.627 303.182 487.221 294.859 500 289.386 L 500 279.395 C 485.294 272.289 471.032 263.224 457.213 252.202 C 443.394 241.172 426.901 225.001 407.732 203.689 L 390.58 203.689 C 404.542 233.438 419.176 256.303 434.482 272.285 L 79.038 272.285 L 79.038 294.715 L 434.482 294.715 C 423.19 309.072 415.313 319.728 410.851 326.683 C 406.397 333.638 399.788 345.847 391.024 363.311 L 407.961 363.311 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000046, 0.00008)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left Right Under Arrow" data-template-type="null" data-function-id="over-leftrightarrow">
+        <svg viewBox="0 0 567 567">
+          <path d="M 201.495 200 L 365.506 200 L 365.506 96.311 L 201.495 96.311 L 201.495 200 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g transform="matrix(1, 0, 0, 1, -15.07399, -0.008522)">
+                <path d="M 407.961 363.311 C 427.721 341.856 444.806 325.538 459.216 314.356 C 473.627 303.182 487.221 294.859 500 289.386 L 500 279.395 C 485.294 272.289 471.032 263.224 457.213 252.202 C 443.394 241.172 426.901 225.001 407.732 203.689 L 390.58 203.689 C 404.542 233.438 419.176 256.303 434.482 272.285 L 79.038 272.285 L 79.038 294.715 L 434.482 294.715 C 423.19 309.072 415.313 319.728 410.851 326.683 C 406.397 333.638 399.788 345.847 391.024 363.311 L 407.961 363.311 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000031, 0.000046)"/>
+                <path d="M 426.071 203.706 C 445.831 225.161 462.916 241.479 477.326 252.661 C 491.737 263.835 505.331 272.158 518.11 277.631 L 518.11 287.622 C 503.404 294.728 489.142 303.793 475.323 314.815 C 461.504 325.845 445.011 342.016 425.842 363.328 L 408.69 363.328 C 422.652 333.579 437.286 310.714 452.592 294.732 L 452.592 272.302 C 441.3 257.945 433.423 247.289 428.961 240.334 C 424.507 233.379 417.898 221.17 409.134 203.706 L 426.071 203.706 Z" style="transform-origin: 307.629px 283.517px;"/>
+            </g>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Right Over Arrow" data-template-type="null" data-function-id="under-rightarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 157.965 450.689 L 349.476 450.689 L 349.476 347 L 157.965 347 L 157.965 450.689 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 407.961 203.689 C 427.721 225.144 444.806 241.462 459.216 252.644 C 473.627 263.818 487.221 272.141 500 277.614 L 500 287.605 C 485.294 294.711 471.032 303.776 457.213 314.798 C 443.394 325.828 426.901 341.999 407.732 363.311 L 390.58 363.311 C 404.542 333.562 419.176 310.697 434.482 294.715 L 79.038 294.715 L 79.038 272.285 L 434.482 272.285 C 423.19 257.928 415.313 247.272 410.851 240.317 C 406.397 233.362 399.788 221.153 391.024 203.689 L 407.961 203.689 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left Over Arrow" data-template-type="null" data-function-id="under-leftarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 226.499 464 L 418.01 464 L 418.01 360.311 L 226.499 360.311 L 226.499 464 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 407.961 363.311 C 427.721 341.856 444.806 325.538 459.216 314.356 C 473.627 303.182 487.221 294.859 500 289.386 L 500 279.395 C 485.294 272.289 471.032 263.224 457.213 252.202 C 443.394 241.172 426.901 225.001 407.732 203.689 L 390.58 203.689 C 404.542 233.438 419.176 256.303 434.482 272.285 L 79.038 272.285 L 79.038 294.715 L 434.482 294.715 C 423.19 309.072 415.313 319.728 410.851 326.683 C 406.397 333.638 399.788 345.847 391.024 363.311 L 407.961 363.311 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000072, -0.000045)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left Right Over Arrow" data-template-type="null" data-function-id="under-leftrightarrow">
+        <svg viewBox="0 0 567 567">
+            <g transform="matrix(1, 0, 0, 1, -15.07399, -0.008522)">
+                <path d="M 407.961 363.311 C 427.721 341.856 444.806 325.538 459.216 314.356 C 473.627 303.182 487.221 294.859 500 289.386 L 500 279.395 C 485.294 272.289 471.032 263.224 457.213 252.202 C 443.394 241.172 426.901 225.001 407.732 203.689 L 390.58 203.689 C 404.542 233.438 419.176 256.303 434.482 272.285 L 79.038 272.285 L 79.038 294.715 L 434.482 294.715 C 423.19 309.072 415.313 319.728 410.851 326.683 C 406.397 333.638 399.788 345.847 391.024 363.311 L 407.961 363.311 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000031, 0.000046)"/>
+                <path d="M 426.071 203.706 C 445.831 225.161 462.916 241.479 477.326 252.661 C 491.737 263.835 505.331 272.158 518.11 277.631 L 518.11 287.622 C 503.404 294.728 489.142 303.793 475.323 314.815 C 461.504 325.845 445.011 342.016 425.842 363.328 L 408.69 363.328 C 422.652 333.579 437.286 310.714 452.592 294.732 L 452.592 272.302 C 441.3 257.945 433.423 247.289 428.961 240.334 C 424.507 233.379 417.898 221.17 409.134 203.706 L 426.071 203.706 Z" style="transform-origin: 307.629px 283.517px;"/>
+            </g>
+            <path d="M 201.495 467.008 L 365.506 467.008 L 365.506 363.319 L 201.495 363.319 L 201.495 467.008 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="X Right Arrow" data-template-type="null" data-function-id="xrightarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.495 200 L 365.506 200 L 365.506 96.311 L 201.495 96.311 L 201.495 200 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g transform="matrix(1, 0, 0, 1, 1.92601, -0.008522)">
+                <path d="M 407.961 203.689 C 427.721 225.144 444.806 241.462 459.216 252.644 C 473.627 263.818 487.221 272.141 500 277.614 L 500 287.605 C 485.294 294.711 471.032 303.776 457.213 314.798 C 443.394 325.828 426.901 341.999 407.732 363.311 L 390.58 363.311 C 404.542 333.562 419.176 310.697 434.482 294.715 L 79.038 294.715 L 79.038 272.285 L 434.482 272.285 C 423.19 257.928 415.313 247.272 410.851 240.317 C 406.397 233.362 399.788 221.153 391.024 203.689 L 407.961 203.689 Z" style="transform-origin: 289.519px 283.5px;"/>
+            </g>
+            <path d="M 201.495 467.008 L 365.506 467.008 L 365.506 363.319 L 201.495 363.319 L 201.495 467.008 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="X Right Arrow" data-template-type="null" data-function-id="xleftarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.495 200 L 365.506 200 L 365.506 96.311 L 201.495 96.311 L 201.495 200 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g transform="matrix(-1, 0, 0, 1, 555.963989, -0.008522)" style="">
+                <path d="M 407.961 203.689 C 427.721 225.144 444.806 241.462 459.216 252.644 C 473.627 263.818 487.221 272.141 500 277.614 L 500 287.605 C 485.294 294.711 471.032 303.776 457.213 314.798 C 443.394 325.828 426.901 341.999 407.732 363.311 L 390.58 363.311 C 404.542 333.562 419.176 310.697 434.482 294.715 L 79.038 294.715 L 79.038 272.285 L 434.482 272.285 C 423.19 257.928 415.313 247.272 410.851 240.317 C 406.397 233.362 399.788 221.153 391.024 203.689 L 407.961 203.689 Z" style="transform-origin: 289.519px 283.5px;"/>
+            </g>
+            <path d="M 201.495 467.008 L 365.506 467.008 L 365.506 363.319 L 201.495 363.319 L 201.495 467.008 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="X Left Right Arrow" data-template-type="null" data-function-id="xleftrightarrow">
+        <svg viewBox="0 0 567 567">
+            <path d="M 201.495 200 L 365.506 200 L 365.506 96.311 L 201.495 96.311 L 201.495 200 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g transform="matrix(1, 0, 0, 1, -15.07399, -0.008522)">
+                <path d="M 407.961 363.311 C 427.721 341.856 444.806 325.538 459.216 314.356 C 473.627 303.182 487.221 294.859 500 289.386 L 500 279.395 C 485.294 272.289 471.032 263.224 457.213 252.202 C 443.394 241.172 426.901 225.001 407.732 203.689 L 390.58 203.689 C 404.542 233.438 419.176 256.303 434.482 272.285 L 79.038 272.285 L 79.038 294.715 L 434.482 294.715 C 423.19 309.072 415.313 319.728 410.851 326.683 C 406.397 333.638 399.788 345.847 391.024 363.311 L 407.961 363.311 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000031, 0.000046)"/>
+                <path d="M 426.071 203.706 C 445.831 225.161 462.916 241.479 477.326 252.661 C 491.737 263.835 505.331 272.158 518.11 277.631 L 518.11 287.622 C 503.404 294.728 489.142 303.793 475.323 314.815 C 461.504 325.845 445.011 342.016 425.842 363.328 L 408.69 363.328 C 422.652 333.579 437.286 310.714 452.592 294.732 L 452.592 272.302 C 441.3 257.945 433.423 247.289 428.961 240.334 C 424.507 233.379 417.898 221.17 409.134 203.706 L 426.071 203.706 Z" style="transform-origin: 307.629px 283.517px;"/>
+            </g>
+            <path d="M 201.495 467.008 L 365.506 467.008 L 365.506 363.319 L 201.495 363.319 L 201.495 467.008 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Harpoons" data-template-type="null" data-function-id="harpoons">
+        <svg viewBox="0 0 567 567">
+            <path d="M 146.288 124.708 L 420.711 124.708 L 420.711 60.033 L 146.288 60.033 L 146.288 124.708 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g id="layer1" transform="matrix(2.84041, 0, 0, 2.356534, -11.316498, -61.946865)" style="">
+                <path d="M 171.49736,140.94491 H 29.72521 V 130.1151 H 138.78913 Q 126.42782,116.2223 121.177,100.57923 h 7.76684 q 15.31489,22.31599 42.55352,32.27067 z m 0,31.28614 H 62.433445 q 12.361307,13.8928 17.721519,29.64526 H 72.278733 Q 56.963841,179.56032 29.72521,169.60564 v -8.09501 h 141.77215 z" id="text4" style="font-size:224.035px;line-height:1.25;stroke-width:0.560087" transform="scale(1.0316301,0.96933964)" aria-label="⇌"/>
+            </g>
+            <path d="M 146.288 506.966 L 420.711 506.966 L 420.711 442.291 L 146.288 442.291 L 146.288 506.966 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Under Harpoons" data-template-type="null" data-function-id="under-harpoons">
+        <svg viewBox="0 0 567 567">
+            <g id="layer1" transform="matrix(2.84041, 0, 0, 2.356534, -11.316498, -61.946865)" style="">
+                <path d="M 171.49736,140.94491 H 29.72521 V 130.1151 H 138.78913 Q 126.42782,116.2223 121.177,100.57923 h 7.76684 q 15.31489,22.31599 42.55352,32.27067 z m 0,31.28614 H 62.433445 q 12.361307,13.8928 17.721519,29.64526 H 72.278733 Q 56.963841,179.56032 29.72521,169.60564 v -8.09501 h 141.77215 z" id="text4" style="font-size:224.035px;line-height:1.25;stroke-width:0.560087" transform="scale(1.0316301,0.96933964)" aria-label="⇌"/>
+            </g>
+            <path d="M 146.288 506.966 L 420.711 506.966 L 420.711 442.291 L 146.288 442.291 L 146.288 506.966 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Over Harpoons" data-template-type="null" data-function-id="over-harpoons">
+        <svg viewBox="0 0 567 567">
+            <path d="M 146.288 124.708 L 420.711 124.708 L 420.711 60.033 L 146.288 60.033 L 146.288 124.708 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g id="layer1" transform="matrix(2.84041, 0, 0, 2.356534, -11.316498, -61.946865)" style="">
+                <path d="M 171.49736,140.94491 H 29.72521 V 130.1151 H 138.78913 Q 126.42782,116.2223 121.177,100.57923 h 7.76684 q 15.31489,22.31599 42.55352,32.27067 z m 0,31.28614 H 62.433445 q 12.361307,13.8928 17.721519,29.64526 H 72.278733 Q 56.963841,179.56032 29.72521,169.60564 v -8.09501 h 141.77215 z" id="text4" style="font-size:224.035px;line-height:1.25;stroke-width:0.560087" transform="scale(1.0316301,0.96933964)" aria-label="⇌"/>
+            </g>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-operator" title="Left arrow" data-latex-data="leftarrow">&leftarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Right arrow" data-latex-data="rightarrow">&rightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Long Left arrow" data-latex-data="longleftarrow">&longleftarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Long Right arrow" data-latex-data="longrightarrow">&longrightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Double Line Left arrow" data-latex-data="Leftarrow">&Leftarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Double Line Right arrow" data-latex-data="Rightarrow">&Rightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Long Double Line Left arrow" data-latex-data="Longleftarrow">&Longleftarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Long Double Line Right arrow" data-latex-data="Longrightarrow">&Longrightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Left Right arrow" data-latex-data="leftrightarrow">&leftrightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Doubl Line Left Right arrow" data-latex-data="Leftrightarrow">&Leftrightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Long Left Right arrow" data-latex-data="longleftrightarrow">&longleftrightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Long Double Line Left Right arrow" data-latex-data="Longleftrightarrow">&Longleftrightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Left Right arrows" data-latex-data="leftrightarrows">&leftrightarrows;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Right Left arrows" data-latex-data="rightleftarrows">&rightleftarrows;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Two Left arrows" data-latex-data="leftleftarrows">&leftleftarrows;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Two Right arrows" data-latex-data="rightrightarrows">&rightrightarrows;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Up arrow" data-latex-data="uparrow">&uparrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Down arrow" data-latex-data="downarrow">&downarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Double Line Up arrow" data-latex-data="Uparrow">&Uparrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Double Line Down arrow" data-latex-data="Downarrow">&Downarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="UpDown arrow" data-latex-data="updownarrow">&updownarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Double Line UpDown arrow" data-latex-data="Updownarrow">&Updownarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Double Up arrow" data-latex-data="upuparrows">&upuparrows;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Double Down arrow" data-latex-data="downdownarrows">&downdownarrows;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Left Harpoon Up" data-latex-data="leftharpoonup">&leftharpoonup;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Right Harpoon Up" data-latex-data="rightharpoonup">&rightharpoonup;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Left Harpoon Down" data-latex-data="leftharpoondown">&leftharpoondown;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Right Harpoon Down" data-latex-data="rightharpoondown">&rightharpoondown;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Left Right Harpoons" data-latex-data="leftrightharpoons">&leftrightharpoons;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Right Left Harpoons" data-latex-data="rightleftharpoons">&rightleftharpoons;</span>
+</div>
+<div class="mjxgui_tab _mjxgui_letters_tab" data-tab="5">
     <span class="mjxgui-btn mjxgui-greek-letter" title="Gamma" data-latex-data="Gamma">&Gamma;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Delta" data-latex-data="Delta">&Delta;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Epsilon" data-latex-data="Epsilon">&Epsilon;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Zeta" data-latex-data="Zeta">&Zeta;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Eta" data-latex-data="Eta">&Eta;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Theta" data-latex-data="Theta">&Theta;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Iota" data-latex-data="Iota">&Iota;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Kappa" data-latex-data="Kappa">&Kappa;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Lambda" data-latex-data="Lambda">&Lambda;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Mu" data-latex-data="Mu">&Mu;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Nu" data-latex-data="Nu">&Nu;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Xi" data-latex-data="Xi">&Xi;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Omicron" data-latex-data="Omicron">&Omicron;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Pi" data-latex-data="Pi">&Pi;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Rho" data-latex-data="Rho">&Rho;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Sigma" data-latex-data="Sigma">&Sigma;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Tau" data-latex-data="Tau">&Tau;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Upsilon" data-latex-data="Upsilon">&Upsilon;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Phi" data-latex-data="Phi">&Phi;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="Chi" data-latex-data="Chi">&Chi;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Psi" data-latex-data="Psi">&Psi;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="Omega" data-latex-data="Omega">&Omega;</span>
-
+    <span class="mjxgui-btn mjxgui-greek-letter" title="Upsilon" data-latex-data="Upsilon">&Upsilon;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="alpha" data-latex-data="alpha">&alpha;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="beta" data-latex-data="beta">&beta;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="gamma" data-latex-data="gamma">&gamma;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="delta" data-latex-data="delta">&delta;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="epsilon" data-latex-data="epsilon">&epsilon;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="varepsilon" data-latex-data="varepsilon">&varepsilon;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="zeta" data-latex-data="zeta">&zeta;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="eta" data-latex-data="eta">&eta;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="theta" data-latex-data="theta">&theta;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="iota" data-latex-data="iota">&iota;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="kappa" data-latex-data="kappa">&kappa;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="lambda" data-latex-data="lambda">&lambda;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="mu" data-latex-data="mu">&mu;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="nu" data-latex-data="nu">&nu;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="xi" data-latex-data="xi">&xi;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="omicron" data-latex-data="omicron">&omicron;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="pi" data-latex-data="pi">&pi;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="rho" data-latex-data="rho">&rho;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="sigma" data-latex-data="sigma">&sigma;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="tau" data-latex-data="tau">&tau;</span>
-    <span class="mjxgui-btn mjxgui-greek-letter" title="upsilon" data-latex-data="upsilon">&upsilon;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="nu" data-latex-data="nu">&nu;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="phi" data-latex-data="phi">&phi;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="chi" data-latex-data="chi">&chi;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="psi" data-latex-data="psi">&psi;</span>
     <span class="mjxgui-btn mjxgui-greek-letter" title="omega" data-latex-data="omega">&omega;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="varphi" data-latex-data="varphi">&varphi;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="varsigma" data-latex-data="varsigma">&varsigma;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="varpi" data-latex-data="varpi">&varpi;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="vartheta" data-latex-data="vartheta">&vartheta;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="epsilon" data-latex-data="epsilon">&epsilon;</span>
+    <span class="mjxgui-btn mjxgui-greek-letter" title="kappa" data-latex-data="kappa">&kappa;</span>
+
+
+
+
+
+
+
+
 </div>
-<div class="mjxgui_tab _mjxgui_symbols_tab" data-tab="2">
-    <span class="mjxgui-btn mjxgui-operator" title="Times" data-latex-data="times">&times;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Divide" data-latex-data="div">&div;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Center dot" data-latex-data="centerdot">&centerdot;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Plus-minus" data-latex-data="plusmn">&plusmn;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Less than" data-latex-data="lt">&lt;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Greater than" data-latex-data="gt">&gt;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Less than or equal to" data-latex-data="leq">&leq;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Greater than or equal to" data-latex-data="GreaterEqual">&GreaterEqual;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Equals" data-latex-data="equals">&equals;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Approximate" data-latex-data="approx">&approx;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Not equal" data-latex-data="NotEqual">&NotEqual;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Minus-plus" data-latex-data="mnplus">&mnplus;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Star" data-latex-data="starf">&starf;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Big cup" data-latex-data="bigcup">&bigcup;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Big cap" data-latex-data="bigcap">&bigcap;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Cup" data-latex-data="cup">&cup;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Cap" data-latex-data="cap">&cap;</span>
+<div class="mjxgui_tab _mjxgui_symbols_tab" data-tab="4">
     <span class="mjxgui-btn mjxgui-operator" title="Subset of" data-latex-data="sub">&sub;</span>
     <span class="mjxgui-btn mjxgui-operator" title="Superset of" data-latex-data="sup">&sup;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Cup" data-latex-data="cup">&cup;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Cap" data-latex-data="cap">&cap;</span>
     <span class="mjxgui-btn mjxgui-operator" title="Subset of or equal to" data-latex-data="sube">&sube;</span>
     <span class="mjxgui-btn mjxgui-operator" title="Superset of or equal to" data-latex-data="supe">&supe;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Not a subset of" data-latex-data="nsub">&nsub;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Not a superset of" data-latex-data="nsup">&nsup;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Not a subset of or equal to" data-latex-data="nsube">&nsube;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Not a superset of or equal to" data-latex-data="nsupe">&nsupe;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Proportional to" data-latex-data="propto">&propto;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Parallel to" data-latex-data="parallel">&parallel;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Not parallel to" data-latex-data="npar">&npar;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Approximately equal to" data-latex-data="asympeq">&asympeq;</span>
     <span class="mjxgui-btn mjxgui-operator" title="Element of" data-latex-data="isin">&isin;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Not an element of" data-latex-data="notin">&notin;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="There exists" data-latex-data="exist">&exist;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="There does not exists" data-latex-data="nexist">&nexist;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Perpendicular to" data-latex-data="perp">&perp;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Implies (left)" data-latex-data="Leftarrow">&Leftarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Implies (right)" data-latex-data="Rightarrow">&Rightarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="If and only if (iff)" data-latex-data="Leftrightarrow">&Leftrightarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Element of" data-latex-data="ni">&ni;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Less than or equal to" data-latex-data="leq">&leq;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Greater than or equal to" data-latex-data="GreaterEqual">&GreaterEqual;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Less than or equal to slant" data-latex-data="leqslant">&LessSlantEqual;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Greater than or equal to slant" data-latex-data="geqslant">&GreaterSlantEqual;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Left Angled Bracket" data-latex-data="langle">&langle;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Right Angled Bracket" data-latex-data="rangle">&rangle;</span>
     <span class="mjxgui-btn mjxgui-operator" title="Angle" data-latex-data="angle">&angle;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Measured angle" data-latex-data="angmsd">&angmsd;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Right arrow" data-latex-data="rightarrow">&rightarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Left arrow" data-latex-data="leftarrow">&leftarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Left right arrow" data-latex-data="leftrightarrow">&leftrightarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Long right arrow" data-latex-data="longrightarrow">&longrightarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Long left arrow" data-latex-data="longleftarrow">&longleftarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Long left right arrow" data-latex-data="longleftrightarrow">&longleftrightarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Up arrow" data-latex-data="uparrow">&uparrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Down arrow" data-latex-data="downarrow">&downarrow;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Up down arrow" data-latex-data="updownarrow">&updownarrow;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Therefore" data-latex-data="there4">&there4;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Because" data-latex-data="since">&because;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Center dot" data-latex-data="centerdot">&middot;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Center dots" data-latex-data="centerdots">&ctdot;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Equivalent to" data-latex-data="equiv">&equiv;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Similar to" data-latex-data="sim">&sim;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Approximate" data-latex-data="approx">&approx;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Similar or Equal to" data-latex-data="sime">&sime;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Congruent to" data-latex-data="cong">&cong;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Not equal" data-latex-data="NotEqual">&NotEqual;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Plus-minus" data-latex-data="plusmn">&plusmn;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Minus-plus" data-latex-data="mnplus">&mnplus;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Times" data-latex-data="times">&times;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Divide" data-latex-data="div">&div;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Setminus" data-latex-data="setminus">&setminus;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Black Square" data-latex-data="blacksquare">&#9632;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="O Plus" data-latex-data="oplus">&oplus;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="O Minus" data-latex-data="ominus">&ominus;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="O Times" data-latex-data="otimes">&otimes;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="O Dot" data-latex-data="odot">&odot;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="For All" data-latex-data="forall">&forall;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="There exists" data-latex-data="exist">&exist;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Asterisk" data-latex-data="ast">&ast;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="h bar" data-latex-data="hbar">&hstrok;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="h slash" data-latex-data="hslash">&hslash;</span>
     <span class="mjxgui-btn mjxgui-operator" title="Partial derivative" data-latex-data="PartialD">&PartialD;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Reduced plank constant (h-bar)" data-latex-data="hbar">&hbar;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Real part symbol" data-latex-data="real">&real;</span>
-    <span class="mjxgui-btn mjxgui-operator" title="Nabla, del operator" data-latex-data="nabla">&nabla;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Eth" data-latex-data="eth">&eth;</span>
     <span class="mjxgui-btn mjxgui-operator" title="Infinity symbol" data-latex-data="infin">&infin;</span>
+    <span class="mjxgui-btn mjxgui-operator" title="Proportional to" data-latex-data="propto">&propto;</span>
+
 </div>
-<div class="mjxgui_tab _mjxgui_functions_tab" data-tab="3">
-    <span class="mjxgui-btn mjxgui-function" title="Summation" data-template-type="three" data-latex-data="sum">&Sigma;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Integral" data-template-type="three" data-latex-data="int">&int;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Double integral" data-template-type="three" data-latex-data="iint">&#8748</span>
-    <span class="mjxgui-btn mjxgui-function" title="Triple integral" data-template-type="three" data-latex-data="iiint">&iiint;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Contour integral" data-template-type="three" data-latex-data="oint">&oint;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Product" data-template-type="three" data-latex-data="prod">&Pi;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Co product" data-template-type="three" data-latex-data="coprod">&coprod;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Big cup (union)" data-template-type="three" data-latex-data="bigcup">&bigcup;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Big cap (intersection)" data-template-type="three" data-latex-data="bigcap">&bigcap;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Big vee (logical OR)" data-template-type="three" data-latex-data="bigvee">&bigvee;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Big wedge (logical AND)" data-template-type="three" data-latex-data="bigwedge">&bigwedge;</span>
-    <span class="mjxgui-btn mjxgui-function" title="Limit" data-template-type="null" data-function-id="lim"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="500" font-weight="500" text-anchor="middle" transform="matrix(.75 0 0 .75 279.5 326.267)"><tspan x="0">lim</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Square root" data-template-type="null" data-function-id="sqrt"><svg viewBox="0 0 567 567"><defs><style>.cls-1,.cls-2{fill-rule:evenodd}.cls-1{stroke-width:4.667px}.cls-2{stroke-width:7.417px}</style></defs><path id="Line_1" d="M3.707 306.883l-1.73-2.643 41.9-27.427 1.73 2.642z" class="cls-1" data-name="Line 1"/><path id="Line_2" d="M47.233 275.65l1.831-1.045 80.1 140.4-1.831 1.044z" class="cls-1" data-name="Line 2"/><path id="Line_3" d="M129.569 410.274l-3.113-1.374 111.707-252.923 3.113 1.375z" class="cls-2" data-name="Line 3"/><path id="Line_4" d="M241.471 154.67v-1.746h322.563v1.746H241.471z" class="cls-2" data-name="Line 4"/><path fill="none" fill-rule="evenodd" stroke-width="10.125" d="M288.978 190.824H495.53v206.552H288.978V190.824z"/></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Nth root" data-template-type="null" data-function-id="nsqrt"><svg viewBox="0 0 567 567"><defs><style>.cls-1,.cls-2,.cls-3{fill-rule:evenodd}.cls-1{stroke-width:4.667px}.cls-2{stroke-width:7.417px}.cls-3{fill:none;stroke-width:10.125px}</style></defs><path id="Line_1" d="M3.707 306.883l-1.73-2.643 41.9-27.427 1.73 2.642z" class="cls-1" data-name="Line 1"/><path id="Line_2" d="M47.233 275.65l1.831-1.045 80.1 140.4-1.831 1.044z" class="cls-1" data-name="Line 2"/><path id="Line_3" d="M129.569 410.274l-3.113-1.374 111.707-252.923 3.113 1.375z" class="cls-2" data-name="Line 3"/><path id="Line_4" d="M241.471 154.67v-1.746h322.563v1.746H241.471z" class="cls-2" data-name="Line 4"/><path d="M288.978 190.824H495.53v206.552H288.978V190.824z" class="cls-3"/><path id="Rectangle_1_copy" d="M69.42 178.744h90.512v90.512H69.42v-90.512z" class="cls-3" data-name="Rectangle 1 copy"/></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Subscript" data-template-type="null" data-function-id="sub"><svg viewBox="0 0 567 567"><defs><style>.cls-1{fill:none;stroke-width:12.875px;fill-rule:evenodd}</style></defs><path d="M27.09 82.836h285.083v285.083H27.09V82.836z" class="cls-1"/><path id="Rectangle_1_copy" d="M362.8 295.421h169.985V465.41H362.8V295.421z" class="cls-1" data-name="Rectangle 1 copy"/></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Superscript" data-template-type="null" data-function-id="sup"><svg viewBox="0 0 567 567"><defs><style>.cls-1{fill:none;stroke-width:12.875px;fill-rule:evenodd}</style></defs><path d="M27.09 468.164h285.083V183.081H27.09v285.083z" class="cls-1"/><path id="Rectangle_1_copy" d="M362.8 255.579h169.985V85.59H362.8v169.989z" class="cls-1" data-name="Rectangle 1 copy"/></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Subscript and Superscript" data-template-type="null" data-function-id="subsup"><svg viewBox="0 0 567 567"><defs><style>.cls-1{fill:none;stroke-width:12.875px;fill-rule:evenodd}</style></defs><path d="M34.7 413.554h267.862V145.693H34.7v267.861z" class="cls-1"/><path id="Rectangle_1_copy" d="M362.8 243.579h169.985V73.59H362.8v169.989z" class="cls-1" data-name="Rectangle 1 copy"/><path id="Rectangle_1_copy_2" d="M533.2 487.579H363.215V317.59H533.2v169.989z" class="cls-1" data-name="Rectangle 1 copy 2"/></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Fraction" data-template-type="null" data-function-id="frac"><svg viewBox="0 0 567 567"><defs><style>.cls-1{fill:none;fill-rule:evenodd;stroke-width:12.875px}</style></defs><path id="Rectangle_1_copy" d="M193.8 225.579h169.985V55.59H193.8v169.989z" class="cls-1" data-name="Rectangle 1 copy"/><path id="Line_1" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="10.125" d="M124 284v-1h295v1H124z" data-name="Line 1"/><path id="Rectangle_1_copy_2" d="M364.2 528.579H194.215V358.59H364.2v169.989z" class="cls-1" data-name="Rectangle 1 copy 2"/></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Sine" data-template-type="trigonometric" data-latex-data="sin"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">sin</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Cosine" data-template-type="trigonometric" data-latex-data="cos"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">cos</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Tangent" data-template-type="trigonometric" data-latex-data="tan"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">tan</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Cosecant" data-template-type="trigonometric" data-latex-data="csc"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">csc</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Secant" data-template-type="trigonometric" data-latex-data="sec"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">sec</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Cotangent" data-template-type="trigonometric" data-latex-data="cot"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">cot</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Inverse sine" data-template-type="trigonometric" data-latex-data="arcsin"><svg width="45" height="20" viewBox="0 0 2000 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="500" text-anchor="middle" transform="matrix(1.5 0 0 1.5 973.5 496)"><tspan x="0">arcsin</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Inverse cosine" data-template-type="trigonometric" data-latex-data="arccos"><svg width="45" height="20" viewBox="0 0 2000 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="500" text-anchor="middle" transform="matrix(1.5 0 0 1.5 973.5 496)"><tspan x="0">arccos</tspan></text></svg></span>
-    <span class="mjxgui-btn mjxgui-function" title="Inverse tanget" data-template-type="trigonometric" data-latex-data="arctan"><svg width="45" height="20" viewBox="0 0 2000 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="500" text-anchor="middle" transform="matrix(1.5 0 0 1.5 973.5 496)"><tspan x="0">arctan</tspan></text></svg></span>
+<div class="mjxgui_tab _mjxgui_positions_tab" data-tab="6">
+    <span class="mjxgui-btn mjxgui-function" title="Big Fraction" data-template-type="twoc" data-latex-data="dfrac">
+        <svg viewBox="0 0 567 567">
+            <path d="M 157.821 213.717 L 409.178 213.717 L 409.178 85.811 L 157.821 85.811 L 157.821 213.717 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g transform="matrix(1.177667, 0, 0, 1, -68.120605, -4.475533)" style="">
+                <path d="M 476.296 294.171 L 476.296 271.741 L 120.852 271.741 L 120.852 294.171 L 476.296 294.171 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000071, 0.000031)"/>
+            </g>
+            <path d="M 157.821 471.15 L 409.178 471.15 L 409.178 343.244 L 157.821 343.244 L 157.821 471.15 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Small Fraction" data-template-type="twoc" data-latex-data="tfrac">
+        <svg viewBox="0 0 567 567">
+            <path d="M 203.067 236.89 L 363.932 236.89 L 363.932 144.836 L 203.067 144.836 L 203.067 236.89 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <g transform="matrix(0.753695, 0, 0, 0.7197, 58.466362, 79.856781)" style="">
+                <path d="M 476.296 294.171 L 476.296 271.741 L 120.852 271.741 L 120.852 294.171 L 476.296 294.171 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000071, 0.000031)"/>
+            </g>
+            <path d="M 203.067 422.164 L 363.932 422.164 L 363.932 330.111 L 203.067 330.111 L 203.067 422.164 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Array" data-template-type="null" data-function-id="larray">
+        <svg viewBox="0 0 567 567">
+            <path d="M 157.821 213.717 L 409.178 213.717 L 409.178 85.811 L 157.821 85.811 L 157.821 213.717 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 157.821 471.15 L 409.178 471.15 L 409.178 343.244 L 157.821 343.244 L 157.821 471.15 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Divide" data-template-type="null" data-function-id="divide">
+        <svg viewBox="0 0 567 567">
+            <path d="M 64.1 230.961 L 237.823 230.961 L 237.823 111.987 L 64.1 111.987 L 64.1 230.961 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 189.266 496.763 L 336.19 70.238 L 385.973 70.238 L 239.393 496.763 L 189.266 496.763 Z" style="fill: rgb(51, 51, 51);"/>
+            <path d="M 337.417 462.218 L 511.14 462.218 L 511.14 343.244 L 337.417 343.244 L 337.417 462.218 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Right Superscript and Subscript" data-template-type="null" data-function-id="subsup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 351.273 121.62 L 482.585 121.62 L 482.585 35.809 L 351.273 35.809 L 351.273 121.62 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 71.392 445.379 L 289.551 445.379 L 289.551 121.62 L 71.392 121.62 L 71.392 445.379 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 351.273 531.19 L 482.585 531.19 L 482.585 445.379 L 351.273 445.379 L 351.273 531.19 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Right Superscript" data-template-type="null" data-function-id="sup">
+        <svg viewBox="0 0 567 567">
+            <path d="M 351.273 121.62 L 482.585 121.62 L 482.585 35.809 L 351.273 35.809 L 351.273 121.62 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 71.392 445.379 L 289.551 445.379 L 289.551 121.62 L 71.392 121.62 L 71.392 445.379 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Right Subscript" data-template-type="null" data-function-id="sub">
+        <svg viewBox="0 0 567 567">
+            <path d="M 71.392 445.379 L 289.551 445.379 L 289.551 121.62 L 71.392 121.62 L 71.392 445.379 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 351.273 531.19 L 482.585 531.19 L 482.585 445.379 L 351.273 445.379 L 351.273 531.19 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left Superscript and Subscript" data-template-type="null" data-function-id="subsupleft">
+        <svg viewBox="0 0 567 567">
+            <path d="M 71.392 35.809 L 202.704 35.809 L 202.704 121.62 L 71.392 121.62 L 71.392 35.809 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000068, -0.000046)"/>
+            <path d="M 264.426 121.62 L 482.585 121.62 L 482.585 445.379 L 264.426 445.379 L 264.426 121.62 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000043, -0.000018)"/>
+            <path d="M 71.392 445.379 L 202.704 445.379 L 202.704 531.19 L 71.392 531.19 L 71.392 445.379 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000068, -0.000027)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left Superscript" data-template-type="null" data-function-id="supleft">
+        <svg viewBox="0 0 567 567">
+            <path d="M 71.392 35.809 L 202.704 35.809 L 202.704 121.62 L 71.392 121.62 L 71.392 35.809 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000068, -0.000046)"/>
+            <path d="M 264.426 121.62 L 482.585 121.62 L 482.585 445.379 L 264.426 445.379 L 264.426 121.62 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000043, -0.000018)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left Subscript" data-template-type="null" data-function-id="subleft">
+        <svg viewBox="0 0 567 567">
+            <path d="M 264.426 121.62 L 482.585 121.62 L 482.585 445.379 L 264.426 445.379 L 264.426 121.62 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000043, -0.000018)"/>
+            <path d="M 71.392 445.379 L 202.704 445.379 L 202.704 531.19 L 71.392 531.19 L 71.392 445.379 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000068, -0.000027)"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Degree" data-template-type="null" data-function-id="degree">
+        <svg viewBox="0 0 567 567">
+            <path d="M 71.392 445.379 L 289.551 445.379 L 289.551 121.62 L 71.392 121.62 L 71.392 445.379 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 431.897 42.358 C 443.509 42.358 454.539 44.552 464.988 48.939 C 475.439 53.328 484.591 59.643 492.453 67.885 C 500.492 75.944 506.609 85.08 510.806 95.293 C 515.004 105.503 517.102 116.52 517.102 128.343 C 517.102 151.987 508.796 172.006 492.183 188.397 C 475.57 204.788 455.296 212.984 431.361 212.984 C 407.245 212.984 387.152 204.922 371.074 188.802 C 354.998 172.681 346.96 152.525 346.96 128.343 C 346.96 104.339 355.176 84.007 371.609 67.347 C 388.044 50.687 408.14 42.358 431.897 42.358 Z M 431.897 77.021 C 417.785 77.021 405.773 81.991 395.859 91.934 C 385.945 101.875 380.988 114.011 380.988 128.343 C 380.988 142.674 385.856 154.675 395.592 164.349 C 405.326 174.021 417.251 178.859 431.361 178.859 C 445.651 178.859 457.843 173.932 467.936 164.08 C 478.027 154.227 483.074 142.315 483.074 128.343 C 483.074 114.19 478.073 102.097 468.07 92.067 C 458.066 82.036 446.01 77.021 431.897 77.021 Z" style="fill: rgb(51, 51, 51);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overset Circle" data-template-type="one" data-latex-data="overset{\\circ}">
+        <svg viewBox="0 0 567 567">
+            <path d="M 174.421 532.46 L 392.58 532.46 L 392.58 208.701 L 174.421 208.701 L 174.421 532.46 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 283.393 42.358 C 292.609 42.358 301.362 44.063 309.655 47.472 C 317.948 50.885 325.211 55.792 331.451 62.199 C 337.832 68.462 342.685 75.563 346.017 83.502 C 349.348 91.438 351.013 100 351.013 109.189 C 351.013 127.567 344.422 143.126 331.238 155.867 C 318.053 168.606 301.963 174.976 282.967 174.976 C 263.829 174.976 247.882 168.71 235.123 156.181 C 222.365 143.651 215.986 127.984 215.986 109.189 C 215.986 90.532 222.507 74.73 235.549 61.78 C 248.591 48.832 264.54 42.358 283.393 42.358 Z M 283.393 69.3 C 272.194 69.3 262.659 73.162 254.793 80.891 C 246.926 88.617 242.992 98.051 242.992 109.189 C 242.992 120.328 246.855 129.655 254.581 137.175 C 262.306 144.692 271.77 148.452 282.967 148.452 C 294.308 148.452 303.984 144.624 311.993 136.965 C 320.003 129.308 324.007 120.048 324.007 109.189 C 324.007 98.189 320.039 88.79 312.1 80.994 C 304.161 73.198 294.594 69.3 283.393 69.3 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overset Dot" data-template-type="one" data-latex-data="overset{\\cdot}">
+        <svg viewBox="0 0 567 567">
+            <path d="M 174.421 509.523 L 392.58 509.523 L 392.58 185.764 L 174.421 185.764 L 174.421 509.523 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 283.42 42.358 C 290.382 42.358 296.994 43.685 303.258 46.338 C 309.524 48.995 315.01 52.814 319.725 57.801 C 324.545 62.675 328.21 68.202 330.728 74.381 C 333.245 80.558 334.503 87.222 334.503 94.374 C 334.503 108.678 329.523 120.788 319.563 130.705 C 309.603 140.62 297.447 145.578 283.098 145.578 C 268.64 145.578 256.592 140.701 246.955 130.949 C 237.316 121.197 232.497 109.003 232.497 94.374 C 232.497 79.853 237.423 67.554 247.276 57.475 C 257.128 47.397 269.177 42.358 283.42 42.358 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overset Dot" data-template-type="one" data-latex-data="ddot">
+        <svg viewBox="0 0 567 567">
+            <path d="M 174.421 509.523 L 392.58 509.523 L 392.58 185.764 L 174.421 185.764 L 174.421 509.523 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 225.344 42.358 C 232.306 42.358 238.918 43.685 245.182 46.338 C 251.448 48.995 256.934 52.814 261.649 57.801 C 266.469 62.675 270.134 68.202 272.652 74.381 C 275.169 80.558 276.427 87.222 276.427 94.374 C 276.427 108.678 271.447 120.788 261.487 130.705 C 251.527 140.62 239.371 145.578 225.022 145.578 C 210.564 145.578 198.516 140.701 188.879 130.949 C 179.24 121.197 174.421 109.003 174.421 94.374 C 174.421 79.853 179.347 67.554 189.2 57.475 C 199.052 47.397 211.101 42.358 225.344 42.358 Z" style=""/>
+            <path d="M 341.583 42.358 C 348.545 42.358 355.157 43.685 361.421 46.338 C 367.687 48.995 373.173 52.814 377.888 57.801 C 382.708 62.675 386.373 68.202 388.891 74.381 C 391.408 80.558 392.666 87.222 392.666 94.374 C 392.666 108.678 387.686 120.788 377.726 130.705 C 367.766 140.62 355.61 145.578 341.261 145.578 C 326.803 145.578 314.755 140.701 305.118 130.949 C 295.479 121.197 290.66 109.003 290.66 94.374 C 290.66 79.853 295.586 67.554 305.439 57.475 C 315.291 47.397 327.34 42.358 341.583 42.358 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overset Underset" data-template-type="null" data-function-id="over-under">
+        <svg viewBox="0 0 567 567">
+            <path d="M 217.844 121.62 L 349.156 121.62 L 349.156 35.809 L 217.844 35.809 L 217.844 121.62 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 174.421 406.483 L 392.58 406.483 L 392.58 160.516 L 174.421 160.516 L 174.421 406.483 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 217.844 531.19 L 349.156 531.19 L 349.156 445.379 L 217.844 445.379 L 217.844 531.19 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Overset" data-template-type="twoc" data-latex-data="overset">
+        <svg viewBox="0 0 567 567">
+            <path d="M 217.844 121.62 L 349.156 121.62 L 349.156 35.809 L 217.844 35.809 L 217.844 121.62 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 174.421 406.483 L 392.58 406.483 L 392.58 160.516 L 174.421 160.516 L 174.421 406.483 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Underset" data-template-type="twoc" data-latex-data="underset">
+        <svg viewBox="0 0 567 567">
+            <path d="M 174.421 406.483 L 392.58 406.483 L 392.58 160.516 L 174.421 160.516 L 174.421 406.483 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+            <path d="M 217.844 531.19 L 349.156 531.19 L 349.156 445.379 L 217.844 445.379 L 217.844 531.19 Z" style="fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: none; stroke-linejoin: round; stroke: rgb(81, 81, 81);"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 3x3" data-template-type="matrix" data-latex-data="3x3">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+            </defs>
+            <path d="M 116.666 174.645 L 192.159 174.645 L 192.159 115.689 L 116.666 115.689 L 116.666 174.645 Z" class="pClass"/>
+            <path d="M 116.666 312.978 L 192.159 312.978 L 192.159 254.022 L 116.666 254.022 L 116.666 312.978 Z" class="pClass"/>
+            <path d="M 116.666 451.311 L 192.159 451.311 L 192.159 392.355 L 116.666 392.355 L 116.666 451.311 Z" class="pClass"/>
+            <path d="M 374.841 174.645 L 450.334 174.645 L 450.334 115.689 L 374.841 115.689 L 374.841 174.645 Z" class="pClass"/>
+            <path d="M 374.841 312.978 L 450.334 312.978 L 450.334 254.022 L 374.841 254.022 L 374.841 312.978 Z" class="pClass"/>
+            <path d="M 374.841 451.311 L 450.334 451.311 L 450.334 392.355 L 374.841 392.355 L 374.841 451.311 Z" class="pClass"/>
+            <path d="M 245.753 174.645 L 321.246 174.645 L 321.246 115.689 L 245.753 115.689 L 245.753 174.645 Z" class="pClass"/>
+            <path d="M 245.753 312.978 L 321.246 312.978 L 321.246 254.022 L 245.753 254.022 L 245.753 312.978 Z" class="pClass"/>
+            <path d="M 245.753 451.311 L 321.246 451.311 L 321.246 392.355 L 245.753 392.355 L 245.753 451.311 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 1x2" data-template-type="matrix" data-latex-data="1x2">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+            </defs>
+            <path d="M 181.21 312.978 L 256.703 312.978 L 256.703 254.022 L 181.21 254.022 L 181.21 312.978 Z" class="pClass"/>
+            <path d="M 310.297 312.978 L 385.79 312.978 L 385.79 254.022 L 310.297 254.022 L 310.297 312.978 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 2x1" data-template-type="matrix" data-latex-data="2x1">
+        <svg viewBox="0 0 567 567">
+              <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+            </defs>
+            <path d="M 245.753 243.812 L 321.246 243.812 L 321.246 184.856 L 245.753 184.856 L 245.753 243.812 Z" class="pClass"/>
+            <path d="M 245.753 382.145 L 321.246 382.145 L 321.246 323.189 L 245.753 323.189 L 245.753 382.145 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 2x2" data-template-type="matrix" data-latex-data="2x2">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+            </defs>
+            <path d="M 181.21 243.812 L 256.703 243.812 L 256.703 184.856 L 181.21 184.856 L 181.21 243.812 Z" class="pClass"/>
+            <path d="M 181.21 382.145 L 256.703 382.145 L 256.703 323.189 L 181.21 323.189 L 181.21 382.145 Z" class="pClass"/>
+            <path d="M 310.297 243.812 L 385.79 243.812 L 385.79 184.856 L 310.297 184.856 L 310.297 243.812 Z" class="pClass"/>
+            <path d="M 310.297 382.145 L 385.79 382.145 L 385.79 323.189 L 310.297 323.189 L 310.297 382.145 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 1x3" data-template-type="matrix" data-latex-data="1x3">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+            </defs>
+            <path d="M 116.666 312.978 L 192.159 312.978 L 192.159 254.022 L 116.666 254.022 L 116.666 312.978 Z" class="pClass"/>
+            <path d="M 374.841 312.978 L 450.334 312.978 L 450.334 254.022 L 374.841 254.022 L 374.841 312.978 Z" class="pClass"/>
+            <path d="M 245.753 312.978 L 321.246 312.978 L 321.246 254.022 L 245.753 254.022 L 245.753 312.978 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 3x1" data-template-type="matrix" data-latex-data="3x1">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+                <bx:grid x="0" y="0" width="36.842" height="40.314"/>
+            </defs>
+            <path d="M 245.753 174.645 L 321.246 174.645 L 321.246 115.689 L 245.753 115.689 L 245.753 174.645 Z" class="pClass"/>
+            <path d="M 245.753 312.978 L 321.246 312.978 L 321.246 254.022 L 245.753 254.022 L 245.753 312.978 Z" class="pClass"/>
+            <path d="M 245.753 451.311 L 321.246 451.311 L 321.246 392.355 L 245.753 392.355 L 245.753 451.311 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 1x4" data-template-type="matrix" data-latex-data="1x4">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+            </defs>
+            <path d="M 52.122 312.978 L 127.615 312.978 L 127.615 254.022 L 52.122 254.022 L 52.122 312.978 Z" class="pClass"/>
+            <path d="M 310.297 312.978 L 385.79 312.978 L 385.79 254.022 L 310.297 254.022 L 310.297 312.978 Z" class="pClass"/>
+            <path d="M 181.209 312.978 L 256.702 312.978 L 256.702 254.022 L 181.209 254.022 L 181.209 312.978 Z" class="pClass"/>
+            <path d="M 439.384 312.978 L 514.877 312.978 L 514.877 254.022 L 439.384 254.022 L 439.384 312.978 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix 4x1" data-template-type="matrix" data-latex-data="4x1">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+                <bx:grid x="0" y="0" width="36.842" height="40.314"/>
+            </defs>
+            <path d="M 245.753 105.479 L 321.246 105.479 L 321.246 46.523 L 245.753 46.523 L 245.753 105.479 Z" class="pClass"/>
+            <path d="M 245.753 243.812 L 321.246 243.812 L 321.246 184.856 L 245.753 184.856 L 245.753 243.812 Z" class="pClass"/>
+            <path d="M 245.753 382.145 L 321.246 382.145 L 321.246 323.189 L 245.753 323.189 L 245.753 382.145 Z" class="pClass"/>
+            <path d="M 245.753 520.478 L 321.246 520.478 L 321.246 461.522 L 245.753 461.522 L 245.753 520.478 Z" class="pClass"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Matrix" data-template-type="matrix" data-latex-data="4x4">
+        <svg viewBox="0 0 567 567">
+              <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+                <bx:grid x="0" y="0" width="36.842" height="40.314"/>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, -9.49501, 0)">
+                <path d="M 62.37 109.083 L 137.863 109.083 L 137.863 50.127 L 62.37 50.127 L 62.37 109.083 Z" class="pClass"/>
+                <path d="M 62.37 247.416 L 137.863 247.416 L 137.863 188.46 L 62.37 188.46 L 62.37 247.416 Z" class="pClass"/>
+                <path d="M 62.37 385.749 L 137.863 385.749 L 137.863 326.793 L 62.37 326.793 L 62.37 385.749 Z" class="pClass"/>
+                <path d="M 62.37 524.082 L 137.863 524.082 L 137.863 465.126 L 62.37 465.126 L 62.37 524.082 Z" class="pClass"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 4.168662, 0)">
+                <path d="M 306.881 109.083 L 382.374 109.083 L 382.374 50.127 L 306.881 50.127 L 306.881 109.083 Z" class="pClass"/>
+                <path d="M 306.881 247.416 L 382.374 247.416 L 382.374 188.46 L 306.881 188.46 L 306.881 247.416 Z" class="pClass"/>
+                <path d="M 306.881 385.749 L 382.374 385.749 L 382.374 326.793 L 306.881 326.793 L 306.881 385.749 Z" class="pClass"/>
+                <path d="M 306.881 524.082 L 382.374 524.082 L 382.374 465.126 L 306.881 465.126 L 306.881 524.082 Z" class="pClass"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -2.663668, 0)">
+                <path d="M 184.626 109.083 L 260.119 109.083 L 260.119 50.127 L 184.626 50.127 L 184.626 109.083 Z" class="pClass"/>
+                <path d="M 184.626 247.416 L 260.119 247.416 L 260.119 188.46 L 184.626 188.46 L 184.626 247.416 Z" class="pClass"/>
+                <path d="M 184.626 385.749 L 260.119 385.749 L 260.119 326.793 L 184.626 326.793 L 184.626 385.749 Z" class="pClass"/>
+                <path d="M 184.626 524.082 L 260.119 524.082 L 260.119 465.126 L 184.626 465.126 L 184.626 524.082 Z" class="pClass"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 11, 0)">
+                <path d="M 429.137 109.083 L 504.63 109.083 L 504.63 50.127 L 429.137 50.127 L 429.137 109.083 Z" class="pClass"/>
+                <path d="M 429.137 247.416 L 504.63 247.416 L 504.63 188.46 L 429.137 188.46 L 429.137 247.416 Z" class="pClass"/>
+                <path d="M 429.137 385.749 L 504.63 385.749 L 504.63 326.793 L 429.137 326.793 L 429.137 385.749 Z" class="pClass"/>
+                <path d="M 429.137 524.082 L 504.63 524.082 L 504.63 465.126 L 429.137 465.126 L 429.137 524.082 Z" class="pClass"/>
+            </g>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Box" data-template-type="one" data-latex-data="boxed">
+        <svg viewBox="0 0 567 567">
+            <defs>
+                <style>
+                .pClass {fill-rule: evenodd; stroke-linecap: round; stroke-width: 23px; fill: rgb(0,0,0); stroke-linejoin: round; stroke: rgb(81, 81, 81);}
+                </style>
+            </defs>
+            <path d="M 172.974 424.599 L 394.026 424.599 L 394.026 142.401 L 172.974 142.401 L 172.974 424.599 Z" class="pClass" style="fill: none;"/>
+            <rect x="99.29" y="81.93" width="368.42" height="403.14" style="stroke: rgb(0, 0, 0); fill: none; fill-rule: nonzero; stroke-width: 10px;"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Left floor" data-template-type="one" data-latex-data="lfloor">
+        <svg viewBox="0 0 567 567">
+            <path d="M 184.21 403.14 L 405.262 403.14 L 405.262 120.942 L 184.21 120.942 L 184.21 403.14 Z" class="pClass" style="fill: none;"/>
+            <path d="M 81.656 483.561 L 81.656 80.628 L 114.106 80.628 L 114.106 452.007 L 156.434 452.007 C 268.749 452.668 294.736 453.75 294.736 453.75 L 294.736 483.759 C 294.736 483.759 268.496 484.221 156.434 483.561 L 81.656 483.561 Z" style=""/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Right floor" data-template-type="null" data-function-id="rfloor">
+        <svg viewBox="0 0 567 567">
+            <path d="M 155.656 120.942 L 376.708 120.942 L 376.708 403.14 L 155.656 403.14 L 155.656 120.942 Z" class="pClass" style="fill: none; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000047, -0.000001)"/>
+            <path d="M 266.182 80.983 L 266.182 483.916 L 298.632 483.916 L 298.632 112.537 L 340.96 112.537 C 453.275 111.876 479.262 110.794 479.262 110.794 L 479.262 80.785 C 479.262 80.785 453.022 80.323 340.96 80.983 L 266.182 80.983 Z" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000003, 0.000001)"/>
+        </svg>
+    </span>
 </div>
-<div style="text-align: center;">
+<div class="mjxgui_tab _mjxgui_trigo_tab" data-tab="7">
+    <span class="mjxgui-btn mjxgui-operator" title="Sine" data-latex-data="sin"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">sin</tspan></text></svg></span>
+    <span class="mjxgui-btn mjxgui-operator" title="Cosine"  data-latex-data="cos"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">cos</tspan></text></svg></span>
+    <span class="mjxgui-btn mjxgui-operator" title="Tangent"  data-latex-data="tan"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">tan</tspan></text></svg></span>
+    <span class="mjxgui-btn mjxgui-operator" title="Cotangent" data-latex-data="cot"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">cot</tspan></text></svg></span>
+    <span class="mjxgui-btn mjxgui-operator" title="Secant"  data-latex-data="sec"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">sec</tspan></text></svg></span>
+    <span class="mjxgui-btn mjxgui-operator" title="Cosecant"  data-latex-data="csc"><svg viewBox="0 0 567 567"><text fill="var(--default-font-color)" font-family="Cambria" font-size="310.5" text-anchor="middle" transform="translate(286.022 367.216) scale(1.235)"><tspan x="0">csc</tspan></text></svg></span>
+
+    <span class="mjxgui-btn mjxgui-function" title="Sine Inverse" data-template-type="one" data-latex-data="sin^{-1}">
+        <svg viewBox="0 0 567 567">
+            <text transform="matrix(1.107561, 0, 0, 1.059112, 270.036713, 417.136047)" style="font-family: Cambria; font-size: 310.5px; text-anchor: middle; white-space: pre;" x="0">sin </text>
+            <path d="M 410.098 206.966 L 410.098 195.99 L 464.829 195.99 L 464.829 206.966 Z M 526.564 134.234 L 530.076 134.234 L 530.076 225.405 Q 530.076 227.6 531.905 228.844 Q 533.735 230.088 536.662 230.088 L 550.857 230.088 L 550.857 235.649 L 498.32 235.649 L 498.32 230.088 L 510.466 230.088 Q 517.93 230.088 517.93 223.649 L 517.93 154.576 Q 517.93 152.381 516.174 150.917 Q 514.418 149.454 511.784 149.454 L 495.54 149.454 L 495.54 144.478 Q 505.93 143.308 512.369 141.259 Q 520.271 138.771 526.564 134.234 Z"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Cosine Inverse" data-template-type="one" data-latex-data="cos^{-1}">
+        <svg viewBox="0 0 567 567">
+            <text transform="matrix(1.021634, 0, 0, 1.059112, 281.919006, 417.136047)" style="font-family: Cambria; font-size: 310.5px; text-anchor: middle; white-space: pre;" x="0">cos </text>
+            <path d="M 410.098 206.966 L 410.098 195.99 L 464.829 195.99 L 464.829 206.966 Z M 526.564 134.234 L 530.076 134.234 L 530.076 225.405 Q 530.076 227.6 531.905 228.844 Q 533.735 230.088 536.662 230.088 L 550.857 230.088 L 550.857 235.649 L 498.32 235.649 L 498.32 230.088 L 510.466 230.088 Q 517.93 230.088 517.93 223.649 L 517.93 154.576 Q 517.93 152.381 516.174 150.917 Q 514.418 149.454 511.784 149.454 L 495.54 149.454 L 495.54 144.478 Q 505.93 143.308 512.369 141.259 Q 520.271 138.771 526.564 134.234 Z"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Tangent Inverse" data-template-type="one" data-latex-data="tan^{-1}">
+        <svg viewBox="0 0 567 567">
+            <text transform="matrix(1.021634, 0, 0, 1.059112, 281.919006, 417.136047)" style="font-family: Cambria; font-size: 310.5px; text-anchor: middle; white-space: pre;" x="0">tan </text>
+            <path d="M 410.098 206.966 L 410.098 195.99 L 464.829 195.99 L 464.829 206.966 Z M 526.564 134.234 L 530.076 134.234 L 530.076 225.405 Q 530.076 227.6 531.905 228.844 Q 533.735 230.088 536.662 230.088 L 550.857 230.088 L 550.857 235.649 L 498.32 235.649 L 498.32 230.088 L 510.466 230.088 Q 517.93 230.088 517.93 223.649 L 517.93 154.576 Q 517.93 152.381 516.174 150.917 Q 514.418 149.454 511.784 149.454 L 495.54 149.454 L 495.54 144.478 Q 505.93 143.308 512.369 141.259 Q 520.271 138.771 526.564 134.234 Z"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Cotangent Inverse" data-template-type="one" data-latex-data="cot^{-1}">
+        <svg viewBox="0 0 567 567">
+            <text transform="matrix(1.021634, 0, 0, 1.059112, 281.919006, 417.136047)" style="font-family: Cambria; font-size: 310.5px; text-anchor: middle; white-space: pre;" x="0">cot </text>
+            <path d="M 410.098 206.966 L 410.098 195.99 L 464.829 195.99 L 464.829 206.966 Z M 526.564 134.234 L 530.076 134.234 L 530.076 225.405 Q 530.076 227.6 531.905 228.844 Q 533.735 230.088 536.662 230.088 L 550.857 230.088 L 550.857 235.649 L 498.32 235.649 L 498.32 230.088 L 510.466 230.088 Q 517.93 230.088 517.93 223.649 L 517.93 154.576 Q 517.93 152.381 516.174 150.917 Q 514.418 149.454 511.784 149.454 L 495.54 149.454 L 495.54 144.478 Q 505.93 143.308 512.369 141.259 Q 520.271 138.771 526.564 134.234 Z"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Secant Inverse" data-template-type="one" data-latex-data="sec^{-1}">
+        <svg viewBox="0 0 567 567">
+            <text transform="matrix(1.021634, 0, 0, 1.059112, 281.919006, 417.136047)" style="font-family: Cambria; font-size: 310.5px; text-anchor: middle; white-space: pre;" x="0">sec </text>
+            <path d="M 410.098 206.966 L 410.098 195.99 L 464.829 195.99 L 464.829 206.966 Z M 526.564 134.234 L 530.076 134.234 L 530.076 225.405 Q 530.076 227.6 531.905 228.844 Q 533.735 230.088 536.662 230.088 L 550.857 230.088 L 550.857 235.649 L 498.32 235.649 L 498.32 230.088 L 510.466 230.088 Q 517.93 230.088 517.93 223.649 L 517.93 154.576 Q 517.93 152.381 516.174 150.917 Q 514.418 149.454 511.784 149.454 L 495.54 149.454 L 495.54 144.478 Q 505.93 143.308 512.369 141.259 Q 520.271 138.771 526.564 134.234 Z"/>
+        </svg>
+    </span>
+    <span class="mjxgui-btn mjxgui-function" title="Cosecant Inverse" data-template-type="one" data-latex-data="text{cosec}^{-1}">
+        <svg viewBox="0 0 567 567">
+            <text transform="matrix(1.021634, 0, 0, 1.059112, 280.919006, 417.136047)" style="font-family: Cambria; font-size: 310.5px; text-anchor: middle; white-space: pre;" x="0">csc </text>
+            <path d="M 410.098 206.966 L 410.098 195.99 L 464.829 195.99 L 464.829 206.966 Z M 526.564 134.234 L 530.076 134.234 L 530.076 225.405 Q 530.076 227.6 531.905 228.844 Q 533.735 230.088 536.662 230.088 L 550.857 230.088 L 550.857 235.649 L 498.32 235.649 L 498.32 230.088 L 510.466 230.088 Q 517.93 230.088 517.93 223.649 L 517.93 154.576 Q 517.93 152.381 516.174 150.917 Q 514.418 149.454 511.784 149.454 L 495.54 149.454 L 495.54 144.478 Q 505.93 143.308 512.369 141.259 Q 520.271 138.771 526.564 134.234 Z"/>
+        </svg>
+    </span>
+</div>
+<div class="_mjxgui_editor_display"></div>
+<div class="bottom_bar" style="text-align: center;">
+    <button class="_mjxgui_dir_btn mjxgui-function" title="Add Text" data-template-type="one" data-latex-data="text" style="cursor:pointer;"> Text
+    </button>
+    <button class="_mjxgui_dir_btn mjxgui-operator" title="Add Space" data-latex-data="space" style="cursor:pointer;"> Space
+    </button>
     <button class="_mjxgui_dir_btn leftArrowButton" style="cursor:pointer;">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -183,4 +1140,3 @@
         </svg>
     </button>
 </div>
-<div class="_mjxgui_editor_display"></div>

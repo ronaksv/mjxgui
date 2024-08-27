@@ -28,7 +28,7 @@ class Expression {
         // Generate LaTeX code from the components in this Expression
         let latex = '';
         for (let c of this.components) {
-            latex += c.toLatex() + ' ';
+            latex += c.toLatex() + '';
         }
         return latex.trim();
     }
@@ -36,8 +36,8 @@ class Expression {
 
 /**
  * @class
- * Represents a block. A fundamental unit of the Expression. 
- * 
+ * Represents a block. A fundamental unit of the Expression.
+ *
  * All data is ultimately stored in
  * a Block. A Component or any child class of Component has a fixed number of Blocks in it, and a Block can
  * have a variable number of 'children'. An element in a Block's children array can either be a string
@@ -55,14 +55,16 @@ class Block {
     toLatex() {
         // Generate LaTeX code from the contents of this block.
         // A block's children can contain either strings or an arbitrary child class of Component.
-        if (this.children.length === 0) return '';
+        if (this.children.length === 0) {
+            return  `\\color{${this.parent.color}}{\\boxed{&#8200;}}`;
+        }
         let latex = '';
         for (let c of this.children) {
             if (typeof c === 'string') {
                 latex += c;
             }
             else {
-                latex += c.toLatex() + ' ';
+                latex += c.toLatex() + '';
             }
         }
         return latex.trim();
@@ -85,7 +87,7 @@ class Block {
  * @class
  * Base class representing a Component of the equation. Inherited by the TextComponent, all *Symbol,
  * and all *Function classes. All child classes of Component override the toLatex method
- * to customize the LaTeX generated. You can define your own child classes to add support for 
+ * to customize the LaTeX generated. You can define your own child classes to add support for
  * LaTeX syntax not yet supported.
  */
 class Component {
@@ -93,9 +95,11 @@ class Component {
         /**
          * @param blocks: The blocks contained by the component
          * @param parent: The block the component is inside (if any), null if no parent
+         * @param color: Color of the block to identify parts of component
          */
         this.blocks = blocks;
         this.parent = parent;
+        this.color = null; //only needed by multi block components
     }
 
     toLatex() {
@@ -129,6 +133,9 @@ class Component {
         let b1 = new Block();
         super([b1], parent);
         b1.parent = this;
+        if(!(this instanceof FrameBox)) {
+            this.color = Colors.getNew();
+        }
     }
 }
 
@@ -144,6 +151,53 @@ class TwoBlockComponent extends Component {
         super([b1, b2], parent);
         b1.parent = this;
         b2.parent = this;
+        this.color = Colors.getNew();
+    }
+}
+
+/**
+ * @class
+ * A component with Matrix
+ */
+class MatrixComponent extends Component {
+
+    constructor(parent, latexData) {
+        let rc = latexData.split("x");
+        let rows = parseInt(rc[0]);
+        let cols = parseInt(rc[1]);
+        let blocks = [];
+        for(let i = 0; i< rows*cols; i++) {
+            blocks[i] = new Block();
+        }
+        super(blocks, parent);
+        this.rows = rows;
+        this.cols = cols;
+        for(let i = 0; i< rows*cols; i++) {
+            blocks[i].parent = this;
+        }
+
+        this.color = Colors.getNew();
+    }
+
+    toLatex() {
+        let output = `\\begin{matrix}`;
+        for (let i=0;i<this.rows;i++){
+            for (let j=0;j<this.cols;j++) {
+
+                output += `${this.blocks[(i*this.cols)+j].toLatex()}`;
+
+                if (j === this.cols - 1) {
+                    if (i !== this.rows - 1 ) {
+                        output += " \\\\ ";
+                    }
+                } else {
+                    output += " & ";
+                }
+            }
+
+        }
+        output += `\\end{matrix}`;
+        return output;
     }
 }
 
@@ -163,6 +217,7 @@ class ThreeBlockComponent extends Component {
         b1.parent = this;
         b2.parent = this;
         b3.parent = this;
+        this.color = Colors.getNew();
     }
 }
 
@@ -185,6 +240,37 @@ class TemplateThreeBlockComponent extends ThreeBlockComponent {
     }
 }
 
+class TemplateOneBlockComponent extends OneBlockComponent {
+    constructor(parent, latexData) {
+        super(parent);
+        this.latexData = latexData;
+    }
+
+    toLatex() {
+        return `\\${this.latexData}{${this.blocks[0].toLatex()}}`;
+    }
+}
+
+class TemplateTwoBlockComponent extends TwoBlockComponent {
+    constructor(parent, latexData) {
+        super(parent);
+        this.latexData = latexData;
+    }
+
+    toLatex() {
+        return `\\${this.latexData}_{${this.blocks[0].toLatex()}}{${this.blocks[1].toLatex()}}`;
+    }
+}
+class TemplateTwoBlockContinuousComponent extends TwoBlockComponent {
+    constructor(parent, latexData) {
+        super(parent);
+        this.latexData = latexData;
+    }
+
+    toLatex() {
+        return `\\${this.latexData}{${this.blocks[0].toLatex()}}{${this.blocks[1].toLatex()}}`;
+    }
+}
 
 /**
  * @class
@@ -201,6 +287,28 @@ class TrigonometricTwoBlockComponent extends TwoBlockComponent {
 
     toLatex() {
         return `\\${this.latexData}^{${this.blocks[0].toLatex()}}{${this.blocks[1].toLatex()}}`;
+    }
+}
+
+class TemplateUndersetComponent extends TwoBlockComponent {
+    constructor(parent, latexData) {
+        super(parent);
+        this.latexData = latexData;
+    }
+
+    toLatex() {
+        return `\\displaystyle\\${this.latexData}\\underset{${this.blocks[0].toLatex()}}{${this.blocks[1].toLatex()}}`;
+    }
+}
+
+class TemplateOversetUndersetComponent extends ThreeBlockComponent {
+    constructor(parent, latexData) {
+        super(parent);
+        this.latexData = latexData;
+    }
+
+    toLatex() {
+        return `\\displaystyle\\${this.latexData}\\overset{${this.blocks[0].toLatex()}}{\\underset{${this.blocks[1].toLatex()}}{${this.blocks[2].toLatex()}}}`;
     }
 }
 
@@ -221,6 +329,7 @@ class TextComponent extends Component {
         return this.blocks[0].toLatex();
     }
 }
+
 
 
 /**
@@ -264,22 +373,16 @@ class Limit extends TwoBlockComponent {
 
 /**
  * @class
- * A fraction
- */
-class Fraction extends TwoBlockComponent {
-    toLatex() {
-        return `\\frac{${this.blocks[0].toLatex()}}{${this.blocks[1].toLatex()}}`;
-    }
-}
-
-
-/**
- * @class
  * Subscript
  */
 class Subscript extends TwoBlockComponent {
     toLatex() {
         return `{${this.blocks[0].toLatex()}}_{${this.blocks[1].toLatex()}}`;
+    }
+}
+class SubscriptLeft extends TwoBlockComponent {
+    toLatex() {
+        return `_{${this.blocks[0].toLatex()}}{${this.blocks[1].toLatex()}}`;
     }
 }
 
@@ -294,6 +397,11 @@ class Superscript extends TwoBlockComponent {
         return `{${this.blocks[0].toLatex()}}^{${this.blocks[1].toLatex()}}`;
     }
 }
+class SuperscriptLeft extends TwoBlockComponent {
+    toLatex() {
+        return `^{${this.blocks[0].toLatex()}}{${this.blocks[1].toLatex()}}`;
+    }
+}
 
 
 /**
@@ -305,7 +413,16 @@ class SubSupRight extends ThreeBlockComponent {
         return `{${this.blocks[0].toLatex()}}_{${this.blocks[1].toLatex()}}^{${this.blocks[2].toLatex()}}`;
     }
 }
-
+class SubSupLeft extends ThreeBlockComponent {
+    toLatex() {
+        return `^{${this.blocks[0].toLatex()}}_{${this.blocks[1].toLatex()}}{${this.blocks[2].toLatex()}}`;
+    }
+}
+class Degree extends OneBlockComponent {
+    toLatex() {
+        return `{${this.blocks[0].toLatex()}}^{\\circ}`;
+    }
+}
 
 /**
  * @class
@@ -325,5 +442,195 @@ class Sqrt extends OneBlockComponent {
 class NthRoot extends TwoBlockComponent {
     toLatex() {
         return `\\sqrt[${this.blocks[0].toLatex()}]{${this.blocks[1].toLatex()}}`;
+    }
+}
+
+class BracketR extends OneBlockComponent {
+    toLatex() {
+        return `\\left({${this.blocks[0].toLatex()}}\\right)`;
+    }
+}
+class BracketRL extends OneBlockComponent {
+    toLatex() {
+        return `\\left({${this.blocks[0].toLatex()}}\\right.`;
+    }
+}
+class BracketRR extends OneBlockComponent {
+    toLatex() {
+        return `\\left.{${this.blocks[0].toLatex()}}\\right)`;
+    }
+}
+class BracketS extends OneBlockComponent {
+    toLatex() {
+        return `\\left[{${this.blocks[0].toLatex()}}\\right]`;
+    }
+}
+class BracketSL extends OneBlockComponent {
+    toLatex() {
+        return `\\left[{${this.blocks[0].toLatex()}}\\right.`;
+    }
+}
+class BracketSR extends OneBlockComponent {
+    toLatex() {
+        return `\\left.{${this.blocks[0].toLatex()}}\\right]`;
+    }
+}
+class BracketC extends OneBlockComponent {
+    toLatex() {
+        return `\\left\\{{${this.blocks[0].toLatex()}}\\right\\}`;
+    }
+}
+class BracketCL extends OneBlockComponent {
+    toLatex() {
+        return `\\left\\{{${this.blocks[0].toLatex()}}\\right.`;
+    }
+}
+class BracketCR extends OneBlockComponent {
+    toLatex() {
+        return `\\left.{${this.blocks[0].toLatex()}}\\right\\}`;
+    }
+}
+class BracketA extends OneBlockComponent {
+    toLatex() {
+        return `\\left\\langle{${this.blocks[0].toLatex()}}\\right\\rangle`;
+    }
+}
+class BracketAL extends OneBlockComponent {
+    toLatex() {
+        return `\\left\\langle{${this.blocks[0].toLatex()}}\\right.`;
+    }
+}
+class BracketAR extends OneBlockComponent {
+    toLatex() {
+        return `\\left.{${this.blocks[0].toLatex()}}\\right\\rangle`;
+    }
+}
+class BracketV extends OneBlockComponent {
+    toLatex() {
+        return `\\left|{${this.blocks[0].toLatex()}}\\right|`;
+    }
+}
+class BracketVL extends OneBlockComponent {
+    toLatex() {
+        return `\\left|{${this.blocks[0].toLatex()}}\\right.`;
+    }
+}
+class BracketVR extends OneBlockComponent {
+    toLatex() {
+        return `\\left.{${this.blocks[0].toLatex()}}\\right|`;
+    }
+}
+class BracketP extends OneBlockComponent {
+    toLatex() {
+        return `\\left\\|{${this.blocks[0].toLatex()}}\\right\\|`;
+    }
+}
+class Pipe extends TwoBlockComponent {
+    toLatex() {
+        return `\\left.{${this.blocks[0].toLatex()}}\\right|{${this.blocks[1].toLatex()}}`;
+    }
+}
+
+class OversetOverbrace extends TwoBlockComponent {
+    toLatex() {
+        return `\\overset{${this.blocks[0].toLatex()}}{\\overbrace{${this.blocks[1].toLatex()}}}`;
+    }
+}
+class UndersetUnderbrace extends TwoBlockComponent {
+    toLatex() {
+        return `\\underset{${this.blocks[0].toLatex()}}{\\underbrace{${this.blocks[1].toLatex()}}}`;
+    }
+}
+class OversetLeftRightArrow extends OneBlockComponent {
+    toLatex() {
+        return `\\overset{${this.blocks[0].toLatex()}}{\\longleftrightarrow}`;
+    }
+}
+class UnderRightArrow extends OneBlockComponent {
+    toLatex() {
+        return `\\underset{${this.blocks[0].toLatex()}}{\\longrightarrow}`;
+    }
+}
+class UnderLeftArrow extends OneBlockComponent {
+    toLatex() {
+        return `\\underset{${this.blocks[0].toLatex()}}{\\longleftarrow}`;
+    }
+}
+class UndersetLeftRightArrow extends OneBlockComponent {
+    toLatex() {
+        return `\\underset{${this.blocks[0].toLatex()}}{\\longleftrightarrow}`;
+    }
+}
+class XRightArrow extends TwoBlockComponent {
+    toLatex() {
+        return `\\xrightarrow[${this.blocks[0].toLatex()}]{${this.blocks[1].toLatex()}}`;
+    }
+}
+class XLeftArrow extends TwoBlockComponent {
+    toLatex() {
+        return `\\xleftarrow[${this.blocks[0].toLatex()}]{${this.blocks[1].toLatex()}}`;
+    }
+}
+class XLeftRightArrow extends TwoBlockComponent {
+    toLatex() {
+        // return `\\xleftrightarrow[${this.blocks[0].toLatex()}]{${this.blocks[1].toLatex()}}`;
+        return `\\underset{${this.blocks[0].toLatex()}}{\\stackrel{${this.blocks[1].toLatex()}}{\\longleftrightarrow}}`;
+    }
+}
+class Harpoons extends TwoBlockComponent {
+    toLatex() {
+        return `\\underset{${this.blocks[0].toLatex()}}{\\stackrel{${this.blocks[1].toLatex()}}{\\rightleftharpoons}}`;
+    }
+}
+class UnderHarpoons extends OneBlockComponent {
+    toLatex() {
+        return `\\underset{${this.blocks[0].toLatex()}}\\rightleftharpoons`;
+    }
+}
+class OverHarpoons extends OneBlockComponent {
+    toLatex() {
+        return `\\overset{${this.blocks[0].toLatex()}}\\rightleftharpoons`;
+    }
+}
+class LArray extends TwoBlockComponent {
+    toLatex() {
+        return `\\begin{array}{c}{${this.blocks[0].toLatex()}}\\\\{${this.blocks[1].toLatex()}}\\end{array}`;
+    }
+}
+class Divide extends TwoBlockComponent {
+    toLatex() {
+        return `^{${this.blocks[0].toLatex()}}/_{${this.blocks[1].toLatex()}}`;
+    }
+}
+class OverUnder extends ThreeBlockComponent {
+    toLatex() {
+        return `\\overset{${this.blocks[0].toLatex()}}{\\underset{${this.blocks[1].toLatex()}}{${this.blocks[2].toLatex()}}}`;
+    }
+}
+class RFloor extends OneBlockComponent {
+    toLatex() {
+        return `{${this.blocks[0].toLatex()}}\\rfloor`;
+    }
+}
+
+
+// Listens for keypress and modifies the Expression accordingly
+
+
+
+class Colors {
+    static colorSet;
+    static _init() {
+        this.colorSet = new Set();
+        for (let col of ['red','blue','green','black','gray','brown','olive','orange','purple','teal','violet']) {
+            this.colorSet.add(col);
+        }
+    }
+    static getNew() {
+        if(!this.colorSet) {
+            this._init();
+        }
+        const colors = Array.from(this.colorSet);
+        return colors[Math.floor(Math.random()*colors.length)];
     }
 }
