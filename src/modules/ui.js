@@ -118,7 +118,7 @@ const symbolLatexMap = {
     leftrightarrows: '\\leftrightarrows',
     rightleftarrows: '\\rightleftarrows',
     leftleftarrows: '\\leftleftarrows',
-    rightrightarrows: '\\rightarrows',
+    rightrightarrows: '\\rightrightarrows',
     longrightarrow: '\\longrightarrow',
     Longrightarrow: '\\Longrightarrow',
     longleftarrow: '\\longleftarrow',
@@ -142,7 +142,7 @@ const symbolLatexMap = {
     PartialD: '\\partial',
     eth: '\\eth',
     hbar: '\\hbar',
-    hslash: '\\lfloor{ron?}',
+    hslash: '\\hslash',
     real: '\\Re',
     nabla: '\\nabla',
     infin: '\\infty',
@@ -251,7 +251,9 @@ class MJXGUI {
             if (this.editorWindow.dataset.visible === 'false') return;
             MathJax.typesetClear([this.eqnDisplay]);
             this.cursor.keyPress(evt, lastKey);
-            lastKey = evt.key;
+            if(!evt.shiftKey) {
+                lastKey = evt.key;
+            }
             // if(evt.key !== 'ArrowLeft' && evt.key !== 'ArrowRight' ) {
             //     this.eqnDisplay.innerHTML =
             //         this.mathDelimiter +

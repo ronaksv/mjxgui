@@ -130,9 +130,9 @@ class Cursor {
         if(event.ctrlKey){
             let _;
             let symbolKey = 'y';
-            let greekKey = 'w';
-            let trigoKey = 't';
-            switch(event.key){
+            let greekKey = 'g';
+            let trigoKey = 'x';
+            switch(event.key) {
                 case 'R':
                     _ = new NthRoot(this.block);
                     break;
@@ -144,19 +144,19 @@ class Cursor {
                     break;
                 case 'r':
                     if (lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\rho');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.rho);
                     }else {
                         _ = new Sqrt(this.block);
                     }
                     break;
                 case '0':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\phi');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.phi);
                     }
                     break;
                 case '3':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\epsilon');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.epsilon);
                     }
                     break;
                 case '9':
@@ -170,7 +170,7 @@ class Cursor {
                     break;
                 case 'i':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\infty');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.infin);
                     } else {
                         _ = new TemplateThreeBlockComponent(this.block, 'displaystyle\\int\\limits');
                     }
@@ -180,16 +180,16 @@ class Cursor {
                     break;
                 case 's':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\sigma');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.sigma);
                     } else if(lastKey === trigoKey) {
-                        _ = new MJXGUISymbol(this.block, '\\sin');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.sin);
                     } else {
                         _ = new TemplateThreeBlockComponent(this.block, 'displaystyle\\sum');
                     }
                     break;
                 case 'c':
                     if(lastKey === trigoKey) {
-                        _ = new MJXGUISymbol(this.block, '\\cos');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.cos);
                     }
                     break;
                 case 'S':
@@ -200,88 +200,88 @@ class Cursor {
                     break;
                 case 'a':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\alpha');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.alpha);
                     } else {
-                        _ = new MJXGUISymbol(this.block, '\\longrightarrow');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.longrightarrow);
                     }
                     break;
                 case 'q':
-                    _ = new MJXGUISymbol(this.block, '\\leftrightharpoons');
+                    _ = new MJXGUISymbol(this.block, symbolLatexMap.leftrightharpoons);
                     break;
                 case 'l':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\leq');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.leq);
                     } else if (lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\lambda');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.lambda);
                     } else {
                         _ = new Subscript(this.block);
                     }
                     break;
                 case 'g':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\geq');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.GreaterEqual);
                     }
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\gamma');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.gamma);
                     }
                     break;
-                case 't':
+                case 'x':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\therefore');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.there4);
                     } else if (lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\theta');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.theta);
                     } else if (lastKey === trigoKey) {
-                        _ = new MJXGUISymbol(this.block, '\\tan');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.tan);
                     }
                     break;
                 case 'b':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\because');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.since);
                     } else if (lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\beta');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.beta);
                     }
                     break;
                 case 'e':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\equiv');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.equiv);
                     } else if (lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\eta');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.eta);
                     } else {
-                        _ = new MJXGUISymbol(this.block, '\\Rightarrow');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.Rightarrow);
                     }
                     break;
                 case 'm':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\times');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.times);
                     } else if (lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\mu');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.mu);
                     }
                     break;
                 case 'p':
                     if(lastKey === symbolKey) {
-                        _ = new MJXGUISymbol(this.block, '\\propto');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.propto);
                     } else if (lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\pi');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.pi);
                     }
                     break;
                 case 'D':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\Delta');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.Delta);
                     }
                     break;
                 case 'd':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\delta');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.delta);
                     }
                     break;
                 case 'o':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\omega');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.omega);
                     }
                     break;
                 case 'O':
                     if(lastKey === greekKey) {
-                        _ = new MJXGUISymbol(this.block, '\\Omega');
+                        _ = new MJXGUISymbol(this.block, symbolLatexMap.Omega);
                     }
                     break;
 

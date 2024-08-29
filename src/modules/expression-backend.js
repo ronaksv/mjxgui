@@ -344,7 +344,7 @@ class MJXGUISymbol extends Component {
     }
 
     toLatex() {
-        return this.latexData;
+        return this.latexData + ' ';
     }
 }
 
